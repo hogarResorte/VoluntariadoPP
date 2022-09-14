@@ -4,62 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="logoAG-redondo.png" />
+    <style type="text/css" media="screen">
+      A:link {color: white; font-size: 12pt; font-family: "Lexend Deca", sans-serif; text-decoration: none }
+      A:hover {color: white; font-size: 12pt; font-family: "Lexend Deca", sans-serif;text-decoration: none }
+      A:visited {color: white; font-size: 12pt; font-family: "Lexend Deca", sans-serif;text-decoration: none }
+    </style>
 
     <title>AG Indumentaria</title>
   </head>
   <body>
     <header>
-  
+      <div class="container">
+        <div class="row">
+        <div class="col-lg-1">
       <a class="logo" href="#"> <img src="logoAG-redondo.png" alt="logo AG" />
- 
+      </div>
+      
+      <div class="col-lg-5">
       <a href="#" class="titulo">
         <h1>AG<span>Indumentaria</span></h1>
       </a>
-
+      </div>
+      <div class="col-lg-5"> 
       <div class="navbar">
         <nav>
+
           <a href="" class="nav-link">Inicio</a>
           <a href="" class="nav-link">Catálogo</a>
           <a href="" class="nav-link">Contacto</a>
         </nav>
       </div>
+      </div>
+      <div class="col-lg-1">
+      <a href="" class="nav-link carrito"><img src="Iconos/carrito.png"></a>
+      </div>
+    </div>
+    </div>
     </header>
 
     <main>
 
       <div class="container">
-        <div class="card">
-            <img src="Sudaderas/sudaderaBlesta2.jpg" alt="freya">
+        <a href="freya.html"><div class="card">
+            <img src="Freya/sudaderaBlesta2.jpg" alt="freya">
             <h2>FREYA SPORT</h2>
-        </div>
+        </div></a> 
 
-          <div class="card">
+        <a href="lemur.html">  <div class="card">
               <img src="lemurCard.jpg" alt="lemur">
               <h2>LEMUR FIT</h2>
           </div>
-      </div>
-
+      </div></a>
+      
     </main>
 
+    <footer class="footer-style">
+      <div class="container">
+          <div class="row">
+              <div class="direccion col-md-5 footer-col">
+                  <h3>Dirección</h3>
+                  
+                    <img src="Iconos/ubicacion.png">
+                    <a href="https://goo.gl/maps/wtXU127xA4jB7Krq5" target="_blank">Tancacha, Córdoba</a>
+                    <p>    
+                      Corrientes 770
+                    </p>
+              </div>
 
-    <footer class="container-fluid">
+              <div class="redes col-md-7 footer-col">  
+                <h3>Redes Sociales</h3>
+                <ul>
+                  <li>
+                  <img src="Iconos/instagram.png" alt="Instagram">
+                  <a href="https://www.instagram.com/ag.indumentaria_/" target="_blank">¡Seguinos en Instagram!</a>
+                  </li>
 
-      <ul>
-        <li>
-          <img src="Iconos/ubicacion.png">
-        <a href="https://goo.gl/maps/wtXU127xA4jB7Krq5" target="_blank">Tancacha, Córdoba</a>
-        </li>
-       <li> <img src="Iconos/instagram.png" alt="Instagram">
-        <a href="" target="_blank">¡Seguinos en Instagram!</a>
-        </li>
-      
-        <li>
-        <img src="Iconos/whatsapp.png" alt="Whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=549357154574170"  target="_blank">Contactanos en Whatsapp</a>
-        </li>
-      </ul>
-    </footer>
+                  <li>
+                  <img src="Iconos/whatsapp.png" alt="Whatsapp">
+                  <a href="https://api.whatsapp.com/send?phone=549357154574170"  target="_blank">Contactanos en Whatsapp</a>
+                  </li>
+
+                </ul>
+
+                </div>
+
+          </div>
+      </div>
+  </footer>
+   
   </body>
+
+  <script src="js/carrito.js"></script>
+
 </html>
