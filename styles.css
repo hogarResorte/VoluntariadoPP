@@ -7,8 +7,16 @@
 
 body {
   margin: 0;
-  background-color: #f89cc8;
+  background-color: #fcaed4;
 }
+
+main{
+  background-image: url(fondo1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
 
 a {
   text-decoration: none;
@@ -174,7 +182,7 @@ footer a {
 
 footer h3{
   color: #f53693;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 ul{
