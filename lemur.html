@@ -1,22 +1,1241 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Iconos/logoAG-redondo.png" />
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/popper.min.js"></script>
     <link rel="stylesheet" href="stylesLemur.css">
     <title>Lemur Fit</title>
 </head>
+
 <body>
 
     <header>
-        <div class="back">
-            <a href="index.html">Volver al inicio</a>
-          </div>
-      
-        <img src="Iconos/lemurLogo.png" alt="Logo Lemur Fit">
+        <div class="row">
+            <div class="icons" class="col-lg-5">
+                    <a>
+                        <i id="mostrar-carrito">
+                            <img src="Iconos/carrito.png" alt="carrito">
+                            <span id="contadorIcono" class="contador-icono"></span>
+                          </i>
+                    </a>
+             </div>
+
+            <div class="col-lg-2">
+                <img src="Iconos/lemurLogo.png" alt="Logo Lemur Fit">
+            </div>
+
+            <div class="back" class="col-lg-5">
+                <a href="index.html">Volver al inicio</a>
+            </div>
+
+        </div>
     </header>
-    
+
+    <main>
+        <div class="separador"></div>
+
+        <div class="wpp-flotante">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+            <a href="https://api.whatsapp.com/send?phone=549357115574170" class="floatWpp" target="_blank">
+                <i class="fa fa-whatsapp my-float-wpp"></i>
+            </a>
+        </div>
+
+        <div class="container-productos">
+
+            <a href="#remeras">
+                <div class="card">
+                    <img src="Lemur/Remeras/remeraAmeliaNar.jpg">
+                    <h3>Remeras</h3>
+                </div>
+            </a>
+
+            <a href="#tops">
+                <div class="card">
+                    <img src="Lemur/Tops/topMMei.jpg">
+                    <h3>Tops</h3>
+                </div>
+            </a>
+
+            <a href="#topsManga">
+                <div class="card">
+                    <img src="Lemur/TopManga/topMangaHawaii.jpg" alt="Tops Manga Corta">
+                    <h3>Tops Manga Corta</h3>
+                </div>
+            </a>
+
+            <a href="#bikers">
+                <div class="card">
+                    <img src="Lemur/Bikers/bikerKalesi2.jpg" alt="Bikers">
+                    <h3>Bikers</h3>
+                </div>
+            </a>
+
+            <a href="#shorts">
+                <div class="card">
+                    <img src="Lemur/Shorts/shortParadise.jpg" alt="Shorts">
+                    <h3>Shorts</h3>
+                </div>
+            </a>
+
+            <a href="#calzas">
+                <div class="card">
+                    <img src="Lemur/Calzas/calzaBerry.jpg" alt="Calzas">
+                    <h3>Calzas</h3>
+                </div>
+            </a>
+
+            <a href="#capris">
+                <div class="card">
+                    <img src="Lemur/Capris/capriFucsia.jpg" alt="Capris">
+                    <h3>Capris</h3>
+                </div>
+            </a>
+
+            <a href="#kids">
+                <div class="card">
+                    <img class="kidsImg" src="Lemur/Kids/kidsGrupal2.jpg" alt="Kids">
+                    <h3>KIDS</h3>
+                </div>
+            </a>
+
+        </div>
+
+        <!--Productos/Carrito -->
+  <section class="carrito" id="productos">
+    <div class="div-titulos">
+       <h2 class="titulo-carrito">Productos</h2>
+    </div>
+    <div class="container">
+    <hr />
+     <div class="tabla-carrito">
+      <!-- Tabla carrito -->
+       <table class="table">
+         <thead>
+           <tr>
+             <th scope="col " class="columnas">#</th>
+             <th scope="col " class="columnas">Productos</th>
+             <th scope="col " class="columnas">Cantidad</th>
+             <th scope="col " class="columnas">Sumar</th>
+             <th scope="col " class="columnas">Total</th>
+           </tr>
+         </thead>
+         <tbody id="items" >
+           <!--* aquí html dinamico desde JS -->
+         </tbody>
+         <tfoot>
+           <tr id="footer">
+             <th scope="row" colspan="5">
+               Carrito vacío es momento de comprar!
+             </th>
+           </tr>
+         </tfoot>
+       </table>
+     </div>
+     <!-- Fin Tabla carrito -->
+     <div class="row" id="cards">
+       <!--* paintCards() / Pinta los productos aquí dinamicamente -->
+     </div>
+   </div>
+   <!-- templete card-productos -->
+   <template id="template-card">
+     <div class="col-12 mb-2 col-md-4 col-lg-3">
+       <div class="card">
+         <img src="" alt="" class="card-img-top" />
+         <div class="card-body bottonCard">
+           <h5 class="producto-nombre">Titulo</h5>
+           <button
+             class="btn  boton-carrito boton_comprar"
+             id="button"
+           >
+             Comprar
+           </button>
+           <span class="moneda">$</span>
+           <p class="precio"><i class="fas fa-dollar-sign"></i></p>
+         </div>
+       </div>
+     </div>
+   </template>
+   <!-- Template carrito -->
+   <template id="template-carrito">
+     <tr>
+       <th scope="row">id</th>
+       <td>Café</td>
+       <td>1</td>
+       <td>
+         <button class="btn btn-danger btn-sm botonRestar">-</button>
+         <button class="btn btn-sm botonSumar">+</button>
+       </td>
+       <td>$ <span>500</span></td>
+     </tr>
+   </template>
+   <!-- Fin Template carrito -->
+   <!-- template Footer -->
+   <template id="template-footer">
+     <th class="total-carrito" scope="row" colspan="2">Total productos</th>
+     <td class="total-carrito">10</td>
+     <td >
+       <button class="btn btn-danger btn-sm boton-vaciar" id="vaciar-carrito">
+         Vaciar
+       </button>
+       <button
+         class="btn btn-sm boton-vaciar boton-checkOut"
+         id="botonPagar" onclick="mostrarOcultar()">
+         Pagar
+       </button>
+     </td>
+     <td class="total-carrito"> $ <span>5000</span></td>
+   </template>
+   <!--Fin template Footer -->
+ </section>
+<!--Fin Carrito -->
+
+        <div id="remeras" class="title-R">
+            <h1>REMERAS / MUSCULOSAS</h1>
+        </div>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/Remeras/remeraAmeliaCel.jpg" onmouseover="src=('Lemur/Remeras/remeraAmeliaCel2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/remeraAmeliaCel.jpg')">
+                <ul class="detalle">
+                    <li class="titulo">Remera Amelia Celeste</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="1">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/remeraAmeliaNar.jpg" onmouseover="src=('Lemur/Remeras/remeraAmeliaNar2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/remeraAmeliaNar.jpg')">
+                <ul class="detalle">
+                    <li>Remera Amelia Naranja</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="2">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/remeraAmeliaBlanco.jpg"
+                    onmouseover="src=('Lemur/Remeras/remeraAmeliaBlanco2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/remeraAmeliaBlanco.jpg')">
+                <ul class="detalle">
+                    <li>Remera Amelia Blanca</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="3">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/remeraAmeliaNegro.jpg"
+                    onmouseover="src=('Lemur/Remeras/remeraAmeliaNegro2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/remeraAmeliaNegro.jpg')">
+                <ul class="detalle">
+                    <li>Remera Amelia Negra</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="4">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaChicleFrida.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaFridaChicle2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaChicleFrida.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Frida Chicle</li>
+                    <li>$2800</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="5">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaFridaNegro.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaFridaNegro2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaFridaNegro.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Frida Negra</li>
+                    <li>$2800</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="6">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaFridaCeleste.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaFridaCeleste2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaFridaCeleste.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Frida Celeste</li>
+                    <li>$2800</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="7">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaMadonnaAmarilloFluo.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaMadonnaAmarilloFluo2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaMadonnaAmarilloFluo.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Madonna Fluo</li>
+                    <li>$2800</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="8">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaMadonnaMelange.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaMadonnaMelange2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaMadonnaMelange.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Madonna Gris</li>
+                    <li>$2800</li>
+                    <li><a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="9">Comprar</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Remeras/sudaderaMadonnaNaranja.jpg"
+                    onmouseover="src=('Lemur/Remeras/sudaderaMadonnaNaranja2.jpg')"
+                    onmouseout="src=('Lemur/Remeras/sudaderaMadonnaNaranja.jpg')">
+                <ul class="detalle">
+                    <li>Sudadera Madonna Naranja</li>
+                    <li>$2800</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="10">Comprar</a>
+            </div>
+
+        </div>
+
+        </div>
+
+
+        <div id="tops" class="title">
+            <h1>TOPS</h1>
+            <p class="pTops">Seleccione "comprar" en el modelo y estampado que desee</p>
+        </div>
+
+        <h2 class="modelosTitulo">MODELOS</h2>
+
+        <div class="tiposTop">
+            <div class="card">
+                <img src="Lemur/Tops/Tipos/tipoBasico.jpg">
+                <ul class="detalle">
+                    <li>Tipo Básico</li>
+                    <li>$2500</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="110">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/Tipos/tipoCompeticion.jpg">
+                <ul class="detalle">
+                    <li>Tipo Competición</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="120">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/Tipos/tipoGreta.jpg">
+                <ul class="detalle">
+                    <li>Tipo Greta</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="130">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/Tipos/tipoMarilyn.jpg">
+                <ul class="detalle">
+                    <li>Tipo Marilyn</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="140">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/Tipos/tipoScarlet.jpg">
+                <ul class="detalle">
+                    <li>Tipo Scarlet</li>
+                    <li>$2500</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="150">Comprar</a>
+            </div>
+        </div>
+
+        <h2 class="modelosTitulo">ESTAMPADOS</h2>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/Tops/topMCayena.jpg">
+                <ul class="detalle">
+                    <li>Top Cayena</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="15">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topMCluny.jpg">
+                <ul class="detalle">
+                    <li>Top Cluny</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="16">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topMKalho.jpg">
+                <ul class="detalle">
+                    <li>Top Kalho</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="17">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topMMei.jpg">
+                <ul class="detalle">
+                    <li>Top Mei</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="18">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topCBriana.jpg">
+                <ul class="detalle">
+                    <li>Top Briana</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="19">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topCGolden.jpg">
+                <ul class="detalle">
+                    <li>Top Golden</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="20">Comprar</a>
+            </div>
+
+
+            <div class="card">
+                <img src="Lemur/Tops/topGFrancia.jpg">
+                <ul class="detalle">
+                    <li>Top Azul Francia</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="57">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topCParadise.jpg">
+                <ul class="detalle">
+                    <li>Top Paradise</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="58">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topGPetroleo.jpg">
+                <ul class="detalle">
+                    <li>Top Petróleo</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="59">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Tops/topSAurora.jpg">
+                <ul class="detalle">
+                    <li>Top Aurora</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="60">Comprar</a>
+            </div>
+
+        </div>
+
+        <div id="topsManga" class="title">
+            <h1>TOPS MANGA CORTA</h1>
+        </div>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaAlba.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Alba</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="21">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaBlack.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Black</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="22">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaEira.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Eira</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="23">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaHawaii.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Hawaii</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="24">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaKalho.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Kalho</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="25">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaKitty.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Kitty</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="26">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/TopManga/topMangaIngles.jpg">
+                <ul class="detalle">
+                    <li>Top Manga Corta Ingles</li>
+                    <li>$3100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="61">Comprar</a>
+            </div>
+
+        </div>
+
+        <div id="bikers" class="title">
+            <h1>BIKERS</h1>
+        </div>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerGolden.jpg" onmouseover="src=('Lemur/Bikers/bikerGolden2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerGolden.jpg')">
+                <ul class="detalle">
+                    <li>Biker Golden</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="27">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerFrizze.jpg" onmouseover="src=('Lemur/Bikers/bikerFrizze2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerFrizze.jpg')">
+                <ul class="detalle">
+                    <li>Biker Frizze</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="28">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerInk.jpeg" onmouseover="src=('Lemur/Bikers/bikerInk2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerInk.jpeg')">
+                <ul class="detalle">
+                    <li>Biker Ink</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="29">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerMei.jpg" onmouseover="src=('Lemur/Bikers/bikerMei2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerMei.jpg')">
+                <ul class="detalle">
+                    <li>Biker Mei</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="30">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerWild.jpg" onmouseover="src=('Lemur/Bikers/bikerWild2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerWild.jpg')">
+                <ul class="detalle">
+                    <li>Biker Wild</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="31">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerKalesi.jpg" onmouseover="src=('Lemur/Bikers/bikerKalesi2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerKalesi.jpg')">
+                <ul class="detalle">
+                    <li>Biker Kalesi</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="32">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerCeleste.jpg" onmouseover="src=('Lemur/Bikers/bikerCeleste2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerCeleste.jpg')">
+                <ul class="detalle">
+                    <li>Biker Celeste Pastel</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="33">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerEsmeralda.jpg" onmouseover="src=('Lemur/Bikers/bikerEsmeralda2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerEsmeralda.jpg')">
+                <ul class="detalle">
+                    <li>Biker Esmeralda</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="34">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerGris.jpg" onmouseover="src=('Lemur/Bikers/bikerGris2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerGris.jpg')">
+                <ul class="detalle">
+                    <li>Biker Gris Melange</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="35">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Bikers/bikerTerra.jpg" onmouseover="src=('Lemur/Bikers/bikerTerra2.jpg')"
+                    onmouseout="src=('Lemur/Bikers/bikerTerra.jpg')">
+                <ul class="detalle">
+                    <li>Biker Terra</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="36">Comprar</a>
+            </div>
+
+
+        </div>
+
+
+        <div id="shorts" class="title">
+            <h1>SHORTS</h1>
+        </div>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortBriana.jpg" onmouseover="src=('Lemur/Shorts/shortBriana2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortBriana.jpg')">
+                <ul class="detalle">
+                    <li>Short Briana</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="37">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortForestSprint.jpg" onmouseover="src=('Lemur/Shorts/shortForestSprint2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortForestSprint.jpg')">
+                <ul class="detalle">
+                    <li>Short Forest Sprint</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="38">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortHawaii.jpg" onmouseover="src=('Lemur/Shorts/shortHawaii2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortHawaii.jpg')">
+                <ul class="detalle">
+                    <li>Short Hawaii</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="39">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortJane.jpg" onmouseover="src=('Lemur/Shorts/shortJane2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortJane.jpg')">
+                <ul class="detalle">
+                    <li>Short Jane</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="40">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortMelange.jpg" onmouseover="src=('Lemur/Shorts/shortMelange2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortMelange.jpg')">
+                <ul class="detalle">
+                    <li>Short Gris Melange</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="41">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortNegro.jpg" onmouseover="src=('Lemur/Shorts/shortNegro2.jpeg')"
+                    onmouseout="src=('Lemur/Shorts/shortNegro.jpg')">
+                <ul class="detalle">
+                    <li>Short Negro</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="42">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortParadise.jpg" onmouseover="src=('Lemur/Shorts/shortParadise2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortParadise.jpg')">
+                <ul class="detalle">
+                    <li>Short Paradise</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="43">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortTiffany.jpg" onmouseover="src=('Lemur/Shorts/shortTiffany2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortTiffany.jpg')">
+                <ul class="detalle">
+                    <li>Short Tiffany</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="44">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortStorm.jpg" onmouseover="src=('Lemur/Shorts/shortStorm2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortStorm.jpg')">
+                <ul class="detalle">
+                    <li>Short Storm</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="45">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Shorts/shortTitanium.jpg" onmouseover="src=('Lemur/Shorts/shortTitanium2.jpg')"
+                    onmouseout="src=('Lemur/Shorts/shortTitanium.jpg')">
+                <ul class="detalle">
+                    <li>Short Titanium</li>
+                    <li>$2700</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="46">Comprar</a>
+            </div>
+
+        </div>
+
+        </div>
+
+        <div id="calzas" class="title">
+            <h1>CALZAS</h1>
+        </div>
+
+        <div class="container-detalle">
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaAlba.jpg" onmouseover="src=('Lemur/Calzas/calzaAlba2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaAlba.jpg')">
+                <ul class="detalle">
+                    <li>Calza Alba</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="47">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaBerry.jpg" onmouseover="src=('Lemur/Calzas/calzaBerry2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaBerry.jpg')">
+                <ul class="detalle">
+                    <li>Calza Berry</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="48">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaCayena.jpg" onmouseover="src=('Lemur/Calzas/calzaCayena2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaCayena.jpg')">
+                <ul class="detalle">
+                    <li>Calza Cayena</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="49">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaEira.jpg" onmouseover="src=('Lemur/Calzas/calzaEira2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaEira.jpg')">
+                <ul class="detalle">
+                    <li>Calza Eira</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="50">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaFucsia.jpg" onmouseover="src=('Lemur/Calzas/calzaFucsia2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaFucsia.jpg')">
+                <ul class="detalle">
+                    <li>Calza Fucsia</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="51">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaHawaii.jpg" onmouseover="src=('Lemur/Calzas/calzaHawaii2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaHawaii.jpg')">
+                <ul class="detalle">
+                    <li>Calza Hawaii</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="52">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaJane.jpg" onmouseover="src=('Lemur/Calzas/calzaJane2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaJane.jpg')">
+                <ul class="detalle">
+                    <li>Calza Jane</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="53">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaKitty.jpg" onmouseover="src=('Lemur/Calzas/calzaKitty2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaKitty.jpg')">
+                <ul class="detalle">
+                    <li>Calza Kitty</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="54">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaMei.jpg" onmouseover="src=('Lemur/Calzas/calzaMei2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaMei.jpg')">
+                <ul class="detalle">
+                    <li>Calza Mei</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="55">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Calzas/calzaTerra.jpg" onmouseover="src=('Lemur/Calzas/calzaTerra2.jpg')"
+                    onmouseout="src=('Lemur/Calzas/calzaTerra.jpg')">
+                <ul class="detalle">
+                    <li>Calza Terra</li>
+                    <li>$3400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="56">Comprar</a>
+            </div>
+
+        </div>
+
+        <div id="capris" class="title">
+            <h1>CAPRIS</h1>
+        </div>
+
+        <div class="container-detalle capris">
+
+            <div class="card">
+                <img src="Lemur/Capris/capriFucsia.jpg" onmouseover="src=('Lemur/Capris/capriFucsia2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriFucsia.jpg')">
+                <ul class="detalle">
+                    <li>Capri Fucsia</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriPhoenix.jpg" onmouseover="src=('Lemur/Capris/capriPhoenix2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriPhoenix.jpg')">
+                <ul class="detalle">
+                    <li>Capri Phoenix</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriBriana.jpg" onmouseover="src=('Lemur/Capris/capriBriana2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriBriana.jpg')">
+                <ul class="detalle">
+                    <li>Capri Briana</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriFrizze.jpg" onmouseover="src=('Lemur/Capris/capriFrizze2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriFrizze.jpg')">
+                <ul class="detalle">
+                    <li>Capri Frizze</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriRosePrint.jpg" onmouseover="src=('Lemur/Capris/capriRosePrint2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriRosePrint.jpg')">
+                <ul class="detalle">
+                    <li>Capri Rose Print</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+
+            <div class="card">
+                <img src="Lemur/Capris/capriSansa.jpg" onmouseover="src=('Lemur/Capris/capriSansa2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriSansa.jpg')">
+                <ul class="detalle">
+                    <li>Capri Sansa</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+
+            <div class="card">
+                <img src="Lemur/Capris/capriStorm.jpg" onmouseover="src=('Lemur/Capris/capriStorm2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriStorm.jpg')">
+                <ul class="detalle">
+                    <li>Capri Storm</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriWild.jpg" onmouseover="src=('Lemur/Capris/capriWild2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriWild.jpg')">
+                <ul class="detalle">
+                    <li>Capri Wild</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriMelange.jpg" onmouseover="src=('Lemur/Capris/capriMelange2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriMelange.jpg')">
+                <ul class="detalle">
+                    <li>Capri Gris Melange</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Capris/capriPetroleo.jpg" onmouseover="src=('Lemur/Capris/capriPetroleo2.jpg')"
+                    onmouseout="src=('Lemur/Capris/capriPetroleo.jpg')">
+                <ul class="detalle">
+                    <li>Capri Petroleo</li>
+                    <li>$3200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+
+        </div>
+        
+        <div id="kids"  class="separador-kids"></div>
+        
+        <div class="title-kids">
+            <h1>SECCIÓN KIDS</h1>    
+        </div>
+        <div class="container-detalle-kids">
+
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsConjuntoPastel.jpg">
+                <ul class="detalle">
+                    <li>Top Pastel $2100</li>
+                    <li>Short Pastel $2100</li>
+                    <li>Cubrebotas Pastel $1200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsConjuntoAurora.jpg">
+                <ul class="detalle">
+                    <li>Conjunto Aurora</li>
+                    <li>Top $2100</li>
+                    <li>Short $2100</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsConjuntoFucsia.jpg">
+                <ul class="detalle">
+                    <li>Top Fucsia $2100</li>
+                    <li>Short Fucsia $2100</li>
+                    <li>Cubrebotas Fucsia $1200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsConjunto.jpg">
+                <ul class="detalle">
+                    <li>Top Pastel $2100</li>
+                    <li>Calza Pastel $2900</li>
+                    <li>Cubrebotas Pastel $1200</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsCalzaLimaPrint.jpg">
+                <ul class="detalle">
+                    <li>Calza Lima Print</li>
+                    <li>$2900</li>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+                                </ul>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsCalzaSurf.jpg">
+                <ul class="detalle">
+                    <li>Calza Surf</li>
+                    <li>$2900</li>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </ul>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsCalzaCombinada.jpg">
+                <ul class="detalle">
+                    <li>Calza combinada con Sally</li>
+                    <li>$2900</li>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </ul>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsConjuntoIcePrint.jpg">
+                <ul class="detalle">
+                    <li>Top Ice Print $2100</li>
+                    <li>Short Ice Print $2100</li>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+                 </ul>
+            </div>
+        </div>
+            <div class="abajo">
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsGrupal.jpg">
+                <ul class="detalle">
+                    <li>Calzas</li>
+                    <li>Modelos: LIMA PRINT, PASTEL, PAINT, NAM</li>
+                    <li>$2900</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+
+            <div class="card">
+                <img src="Lemur/Kids/kidsGrupal5.jpg">
+                <ul class="detalle">
+                    <li>Conjuntos</li>
+                    <li>Modelos: AURORA, FUCSIA, PASTEL, LIMA PRINT</li>
+                    <li>Top + Short + Cubrebotas = $5400</li>
+                </ul>
+                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
+            </div>
+        </div>
+
+        </div>
+   
+
+    </main>
+<!-- Caja check-out-->
+<section class="check-out" id="check-out">
+    <div id="cerrar">
+       <i class="fas fa-times"></i>
+    </div>
+    <h2 class="titulo-total">
+        TOTAL
+      <span id="precioFinal">
+          <!-- Aquí el precio fianl para check-out dinamico desde JS -->
+      </span>
+    </h2>
+    <form action="#">
+      <h4>Cliente</h4>
+      <div class="input-group1">
+        <div class="input-box1">
+          <input type="text" placeholder="Nombre" required class="name" />
+        </div>
+        <div class="input-box1">
+          <input type="text" placeholder="Apellido" required class="name" />
+        </div>
+      </div>
+      <div class="input-group1">
+        <div class="input-box1">
+          <input type="email" placeholder="Email" required class="name" />
+        </div>
+        <div class="input-box1">
+          <input type="tel" placeholder="Tel.." required class="name" />
+        </div>
+      </div>
+      <div class="input-group2">
+        <div class="input-box2">
+          <h4>Fecha y hora de entrega</h4>
+          <input type="text" placeholder="Dia" class="name2" />
+          <input type="text" placeholder="Mes" class="name2" />
+          <input type="text" placeholder="Horario" class="name2" />
+          <input type="radio" id="b1" name="tiempo" checked class="radio" />
+          <label for="b1">AM</label>
+          <input type="radio" id="b2" name="tiempo" class="radio" />
+          <label for="b2">PM</label>
+        </div>
+      </div>
+      <h4>Medios de pago</h4>
+      <div class="input-group3">
+        <div class="input-box3">
+          <input type="radio" name="pay" id="bc1" checked class="radio" />
+          <label for="bc1">
+            <span>
+              <i class="fa fa-cc-visa " tarjeta></i>
+            </span>
+          </label>
+          <input type="radio" name="pay" id="bc2" class="radio" />
+          <label for="bc2">
+            <span>
+              <i class="fa fa-cc-mastercard" tarjeta></i>
+            </span>
+          </label>
+          <input type="radio" name="pay" id="bc3" class="radio" />
+          <label for="bc3">
+            <span>
+              <i class="fab fa-cc-amex" tarjeta></i>
+            </span>
+          </label>
+        </div>
+      </div>
+      <div class="input-group4">
+        <div class="input-box4">
+          <input type="password" placeholder="Card number" required class="name3"/>
+        </div>
+      </div>
+      <div class="input-group4">
+        <div class="input-box">
+          <input type="password" placeholder="Card CVC" required class="name3"/>
+        </div>
+      </div>
+      <div class="select">
+        <div class="input-box">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Mes</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Año</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+      </div>
+      <div class="input-boton">
+          <button type="Submit" boton-submit>Pagar</button>
+      </div>
+    </form>
+  </section>
+    <footer class="footer-style">
+        <div class="container">
+            <div class="row">
+                <div class="direccion col-md-6 footer-col">
+
+
+                    <img src="Iconos/ubicacion.png">
+                    <a href="https://goo.gl/maps/wtXU127xA4jB7Krq5" target="_blank">Tancacha, Córdoba</a>
+                    <span> Corrientes 770</span>
+                </div>
+
+                <div id="contacto" class="redes col-md-6 footer-col">
+
+                    <ul>
+
+                        <li>
+                            <img src="Iconos/instagram.png" alt="Instagram">
+                            <a href="https://www.instagram.com/ag.indumentaria_/" target="_blank">¡Seguinos en
+                                Instagram!</a>
+                        </li>
+
+                        <li>
+                            <img src="Iconos/whatsapp.png" alt="Whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=54935715574170" target="_blank">Contactanos en
+                                Whatsapp</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+  
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      ></script>
+    <!-- Pluging Owl Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      ></script>
+    <!-- js bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- My JS -->
+    <script src="main.js"></script>
 </body>
+
 </html>

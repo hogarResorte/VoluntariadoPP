@@ -2,11 +2,21 @@
 /*color del logo #f53693*/
 /*color de la G #c4aeee*/
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
+
+html,
 body {
   margin: 0;
+  padding: 0;
+}
+
+
+body {
+
   background-color: #fcaed4;
 }
 
@@ -15,7 +25,6 @@ main{
   background-size: cover;
   background-attachment: fixed;
 }
-
 
 
 a {
@@ -48,7 +57,7 @@ header {
 }
 
 
-span {
+.titulo h1 span {
   text-align: center;
   font-weight: 200;
   font-size: 40px;
@@ -77,7 +86,7 @@ span {
   color: white;
 }
 
-.row{
+header .row{
   width: 100%;
   height: 100%;
   text-align: center;
@@ -96,9 +105,8 @@ span {
   font-weight: 600;
 }
 
-.container {
+main .container {
   width: 100%;
-  max-width: 1200px;
   height: 430px;
   display: flex;
   flex-wrap: wrap;
@@ -106,7 +114,7 @@ span {
   margin: auto;
 }
 
-.container .card {
+main .container .card {
   width: 220px;
   height: 390px;
   border-radius: 10px;
@@ -148,89 +156,71 @@ a:hover{
   padding: 0 1rem;
 }
 
+
 footer {
   background-color: black;
-  text-align: center;
-  align-items: center;
+  justify-content: center;
   font-family: "Lexend Deca", sans-serif;
   height: max-content;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 footer .row{
   width: 100%;
-
 }
 
-footer img{
+footer img {
+  display: inline;
   flex-direction: column;
-  text-align: center;
-  justify-content: space-between;
-  align-items: center;
   height: 30px;
-  width: 43px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
   margin-bottom: 10px;
 }
 
 footer a {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  display: inline;
   color: white;
   text-decoration: none;
   margin: 10px;
+  font-family: "Mulish", sans-serif;
 }
 
-footer h3{
-  color: #f53693;
-  font-weight: 200;
-}
-
-ul{
-  text-decoration: none;
-  list-style: none;
-}
 
 footer ul{
   text-decoration: none;
   list-style: none;
   padding: 0;
   margin: 0;
-  height: max-content;
 }
 
-footer .container{
-  padding: 30px;
-  height: max-content;
-}
-
-.direccion p{
-  display: block;
+footer .direccion {
+  width: max-content;
+  display: inline;
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+
+.direccion span{
+  display: block;
+  justify-content: center;
+  align-items: center;
   color: white;
-  font-weight: 100;
+  font-family: "Lexend Deca", sans-serif;
 }
 
 .direccion a{
   text-align: center;
   display: inline;
-}
-
-.redes{
-  display: block;
-  flex-direction: column;
-  text-align: center;
   justify-content: center;
   align-items: center;
 }
 
-.redes a{
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: inline;
-}
+
 
 @media (max-width: 700px) {
   * {

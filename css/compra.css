@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400&display=swap");
+/*color del logo #f53693*/
+/*color de la G #c4aeee*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+header {
+    background-color: #c4aeee;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 100px 800px;
+}
+
+.logo img {
+    display: inline;
+    width: 60px;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.titulo {
+    font-family: "Lexend Deca", sans-serif;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    display: inline;
+    margin-top: 10px;
+}
+

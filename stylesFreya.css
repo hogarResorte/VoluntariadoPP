@@ -1,7 +1,19 @@
-@import url("https://fonts.googleapis.com/css2? family=Lexend+Deca:wght@100;200;400&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Lexend+Deca:wght@100;200;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body {
   background-color: black;
   background-image: url(fondo4.jpg);
   background-position: center;
@@ -10,31 +22,63 @@ body {
 
 header {
   background-color: black;
+  align-items: center;
+  justify-content: space-between;
 }
+
+header .row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .carrito img{
+  width: 30px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
 
 header .back {
-  font-family: "Lexend Deca", sans-serif;
-  font-weight: 300;
-  display: inline;
-}
-
-.back a {
+  font-family: "Oswald", sans-serif;
+  height: max-content;
+  align-items: center;
   text-decoration: none;
   color: white;
 }
 
-.freyaLogo {
-  text-align: center;
+.back a {
+ align-items: center;
   justify-content: center;
-  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.freyaLogo img{
+  padding: 0%;
+  margin: 0%;
+  display: inline-block;
+}
+
+
+.boton-carrito {
+  width: 150px;
+  padding: 100%;
+  margin-top: 5px;
 }
 
 header img {
   width: 300px;
-  text-align: center;
+}
+
+.agregar-carrito {
+  width: 90px;
+ text-align: center;
   justify-content: center;
   align-items: center;
-}
+  }
+
 
 .separador {
   height: 400px;
@@ -57,41 +101,46 @@ header img {
   -webkit-filter: brightness(100%);
 }
 
-.container-productos {
+main .container-productos {
   width: 100%;
   max-width: 1200px;
   height: 430px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   margin: auto;
   margin-top: 10px;
 }
 
-.container-productos .card {
+main .container-productos .card {
   width: 250px;
   height: 250px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin: 5px;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   transition: all 0.25s;
   background-color: white;
 }
 
-.container-productos .card:hover {
+main .container-productos .card:hover {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container-productos .card img {
+main .container-productos .card img {
   width: 130px;
   height: 210px;
   padding: 0;
   margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 
-.container-productos h3 {
+main .container-productos h3 {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -102,12 +151,12 @@ header img {
   color: black;
 }
 
-.container-productos a {
+main .container-productos a {
   text-decoration: none;
   color: black;
 }
 
-.title {
+main .title {
   display: block;
   text-align: center;
   justify-content: center;
@@ -115,11 +164,11 @@ header img {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 400px;
+  margin-top: 500px;
   color: white;
 }
 
-.title-R {
+main .title-R {
   display: block;
   text-align: center;
   justify-content: center;
@@ -132,7 +181,7 @@ header img {
   color: white;
 }
 
-.container-detalle {
+main .container-detalle {
   width: 100%;
   max-width: 1200px;
   height: 350px;
@@ -142,52 +191,57 @@ header img {
   padding-top: 10px;
 }
 
-.container-detalle .card {
-  width: 150px;
-  height: 350px;
+main .detalle {
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+main .container-detalle .card {
+  width: 170px;
+  height: 390px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 0px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: center;
   transition: all 0.25s;
   background-color: white;
-  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
 }
 
-.card span {
+main .card span {
   color: #4b4f58;
   font-size: 10px;
   font-family: "Oswald", sans-serif;
 }
 
-.container-detalle .card:hover {
+main .container-detalle .card:hover {
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
-.container-detalle .card img {
-  width: 150px;
-  height: 250px;
+main .container-detalle .card img {
+  width: 100%;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
-.container-detalle h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
+main .container-detalle .card a {
   text-align: center;
   justify-content: center;
   align-items: center;
-  margin-top: 0%;
 }
 
-.container-detalle p {
-  font-family: "Oswald", sans-serif;
-  font-size: 15px;
+main .btn {
+ margin-top: 0;
+ padding: 0%;
 }
 
 .carrito {
@@ -196,7 +250,115 @@ header img {
   align-items: center;
 }
 
+
 footer {
-  padding: 40px;
-  margin: 300px;
+  background-color: black;
+}
+
+footer .container {
+  justify-content: center;
+  height: max-content;
+  margin-top: 500px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: "Mulish", sans-serif;
+}
+
+footer .row{
+  width: 100%;
+
+}
+
+footer img {
+  display: inline;
+  flex-direction: column;
+  height: 30px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+footer a {
+  display: inline;
+  color: white;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+  margin: 10px;
+}
+
+footer ul{
+  display: inline;
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+
+footer .direccion img {
+  display: inline;
+  vertical-align: middle;
+}
+
+footer .direccion span{
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Mulish", sans-serif;
+  color: white;
+}
+
+footer .direccion {
+  width: max-content;
+  display: inline;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 100;
+  font-family: "Mulish", sans-serif;
+}
+
+footer .container .redes {
+  width: max-content;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  font-family: "Mulish", sans-serif;
+}
+
+
+
+@media (max-width: 700px) {
+  * {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 320px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+  table,
+  p,
+  img {
+    padding-right: 1em;
+    width: 100%;
+  }
+}
+@media (min-width: 480px) {
+  /* smartphones, Android phones, landscape iPhone */
+}
+@media (min-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }
