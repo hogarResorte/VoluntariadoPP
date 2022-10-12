@@ -22,65 +22,80 @@ body {
 
 header {
   background-color: black;
-  align-items: center;
+  display: flex;
+  padding: 5px;
   justify-content: space-between;
+  color:rgb(223, 223, 50);
 }
 
 header .row {
-  justify-content: space-between;
   align-items: center;
-}
-
-header .carrito img{
-  width: 30px;
-  height: 50px;
   text-align: center;
   justify-content: center;
-  align-items: center;
 }
-
 
 header .back {
   font-family: "Oswald", sans-serif;
   height: max-content;
-  align-items: center;
   text-decoration: none;
-  color: white;
+  margin: 0;
+  display: inline;
 }
 
 .back a {
- align-items: center;
-  justify-content: center;
   text-decoration: none;
-  color: white;
+  color:rgb(223, 223, 50);
+}
+
+.navbar a::after {
+  color:rgb(223, 223, 50);
+}
+
+.navbar a:hover {
+  font-weight: 600;
+  color:white;
+}
+
+.freyaLogo {
+  display: inline;
 }
 
 .freyaLogo img{
   padding: 0%;
   margin: 0%;
-  display: inline-block;
-}
-
-
-.boton-carrito {
-  width: 150px;
-  padding: 100%;
-  margin-top: 5px;
+  margin: 0;
 }
 
 header img {
   width: 300px;
 }
 
-.agregar-carrito {
-  width: 90px;
- text-align: center;
-  justify-content: center;
+nav {
+  display: inline;
+}
+
+.navbar {
+  display: inline;
   align-items: center;
-  }
+  height: max-content;
+  font-size: 20px;
+  margin: 0;
+}
+
+.navbar a {
+  display: inline-flex;
+  font-family: "Oswald", sans-serif;
+  color:rgb(223, 223, 50);
+}
+
+.navbar a:hover {
+  font-weight: 600;
+  color:white;
+}
 
 
 .separador {
+  margin-top: 0px;
   height: 400px;
   background-image: url(Freya/freya5.1.PNG);
   background-repeat: no-repeat;
@@ -228,7 +243,7 @@ main .container-detalle .card:hover {
 
 main .container-detalle .card img {
   width: 100%;
-  height: 100%;
+ 
   padding: 0;
   margin: 0;
 }
@@ -239,47 +254,28 @@ main .container-detalle .card a {
   align-items: center;
 }
 
-main .btn {
- margin-top: 0;
- padding: 0%;
-}
-
-.carrito {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
 
 footer {
+  display: flex;
   background-color: black;
-}
-
-footer .container {
-  justify-content: center;
-  height: max-content;
+   height: max-content;
   margin-top: 500px;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: "Mulish", sans-serif;
 }
 
-footer .row{
-  width: 100%;
-
-}
-
-footer img {
-  display: inline;
+footer .container .row img {
   flex-direction: column;
   height: 30px;
   width: 35px;
   padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 10px;
+  vertical-align: middle;
 }
 
-footer a {
+
+footer .container.row a {
   display: inline;
   color: white;
   font-family: "Mulish", sans-serif;
@@ -287,7 +283,7 @@ footer a {
   margin: 10px;
 }
 
-footer ul{
+footer  .container .row ul{
   display: inline;
   text-decoration: none;
   list-style: none;
@@ -297,36 +293,24 @@ footer ul{
 }
 
 
-footer .direccion img {
-  display: inline;
+footer .container .row .direccion img {
   vertical-align: middle;
 }
 
-footer .direccion span{
+footer .container  .row .direccion span{
   display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-left: 68px;
   font-weight: 100;
   font-family: "Mulish", sans-serif;
   color: white;
 }
 
-footer .direccion {
-  width: max-content;
-  display: inline;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+footer .container  .row .direccion {
   font-weight: 100;
   font-family: "Mulish", sans-serif;
 }
 
-footer .container .redes {
-  width: max-content;
-  display: inline;
-  justify-content: center;
-  align-items: center;
+footer .container .row .redes {
   font-family: "Mulish", sans-serif;
 }
 

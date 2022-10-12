@@ -19,25 +19,35 @@
 <body>
 
     <header>
-        <div class="row">
-            <div class="icons" class="col-lg-5">
-                    <a>
-                        <i id="mostrar-carrito">
-                            <img src="Iconos/carrito.png" alt="carrito">
-                            <span id="contadorIcono" class="contador-icono"></span>
-                          </i>
-                    </a>
-             </div>
 
-            <div class="col-lg-2">
-                <img src="Iconos/lemurLogo.png" alt="Logo Lemur Fit">
-            </div>
+        <div class="container">
 
-            <div class="back" class="col-lg-5">
-                <a href="index.html">Volver al inicio</a>
+            <div class="row">
+
+                <div class="back col-lg-4">
+                    <a href="index.html">Volver al inicio</a>
+                </div>
+
+                <div class="lemurLogo col-lg-4">
+                    <a class="logo" href="#"> <img src="Iconos/lemurLogo.png" alt="Logo Lemur Fit"></a>
+                </div>
+
+                <div class="navbar col-lg-4">
+                        <nav>
+
+                            <a href="#categorias" class="nav-link">Categorías</a>
+                            <a href="#contacto" class="nav-link">Contacto</a>
+                        </nav>
+                </div>
             </div>
+        </div>
+
+
+        <div class="col-lg-6">
 
         </div>
+
+
     </header>
 
     <main>
@@ -50,7 +60,7 @@
             </a>
         </div>
 
-        <div class="container-productos">
+        <div id="categorias" class="container-productos">
 
             <a href="#remeras">
                 <div class="card">
@@ -110,95 +120,6 @@
 
         </div>
 
-        <!--Productos/Carrito -->
-  <section class="carrito" id="productos">
-    <div class="div-titulos">
-       <h2 class="titulo-carrito">Productos</h2>
-    </div>
-    <div class="container">
-    <hr />
-     <div class="tabla-carrito">
-      <!-- Tabla carrito -->
-       <table class="table">
-         <thead>
-           <tr>
-             <th scope="col " class="columnas">#</th>
-             <th scope="col " class="columnas">Productos</th>
-             <th scope="col " class="columnas">Cantidad</th>
-             <th scope="col " class="columnas">Sumar</th>
-             <th scope="col " class="columnas">Total</th>
-           </tr>
-         </thead>
-         <tbody id="items" >
-           <!--* aquí html dinamico desde JS -->
-         </tbody>
-         <tfoot>
-           <tr id="footer">
-             <th scope="row" colspan="5">
-               Carrito vacío es momento de comprar!
-             </th>
-           </tr>
-         </tfoot>
-       </table>
-     </div>
-     <!-- Fin Tabla carrito -->
-     <div class="row" id="cards">
-       <!--* paintCards() / Pinta los productos aquí dinamicamente -->
-     </div>
-   </div>
-   <!-- templete card-productos -->
-   <template id="template-card">
-     <div class="col-12 mb-2 col-md-4 col-lg-3">
-       <div class="card">
-         <img src="" alt="" class="card-img-top" />
-         <div class="card-body bottonCard">
-           <h5 class="producto-nombre">Titulo</h5>
-           <button
-             class="btn  boton-carrito boton_comprar"
-             id="button"
-           >
-             Comprar
-           </button>
-           <span class="moneda">$</span>
-           <p class="precio"><i class="fas fa-dollar-sign"></i></p>
-         </div>
-       </div>
-     </div>
-   </template>
-   <!-- Template carrito -->
-   <template id="template-carrito">
-     <tr>
-       <th scope="row">id</th>
-       <td>Café</td>
-       <td>1</td>
-       <td>
-         <button class="btn btn-danger btn-sm botonRestar">-</button>
-         <button class="btn btn-sm botonSumar">+</button>
-       </td>
-       <td>$ <span>500</span></td>
-     </tr>
-   </template>
-   <!-- Fin Template carrito -->
-   <!-- template Footer -->
-   <template id="template-footer">
-     <th class="total-carrito" scope="row" colspan="2">Total productos</th>
-     <td class="total-carrito">10</td>
-     <td >
-       <button class="btn btn-danger btn-sm boton-vaciar" id="vaciar-carrito">
-         Vaciar
-       </button>
-       <button
-         class="btn btn-sm boton-vaciar boton-checkOut"
-         id="botonPagar" onclick="mostrarOcultar()">
-         Pagar
-       </button>
-     </td>
-     <td class="total-carrito"> $ <span>5000</span></td>
-   </template>
-   <!--Fin template Footer -->
- </section>
-<!--Fin Carrito -->
-
         <div id="remeras" class="title-R">
             <h1>REMERAS / MUSCULOSAS</h1>
         </div>
@@ -212,7 +133,6 @@
                     <li class="titulo">Remera Amelia Celeste</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="1">Comprar</a>
             </div>
 
             <div class="card">
@@ -222,7 +142,6 @@
                     <li>Remera Amelia Naranja</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="2">Comprar</a>
             </div>
 
             <div class="card">
@@ -233,7 +152,6 @@
                     <li>Remera Amelia Blanca</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="3">Comprar</a>
             </div>
 
             <div class="card">
@@ -244,7 +162,6 @@
                     <li>Remera Amelia Negra</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="4">Comprar</a>
             </div>
 
             <div class="card">
@@ -255,7 +172,6 @@
                     <li>Sudadera Frida Chicle</li>
                     <li>$2800</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="5">Comprar</a>
             </div>
 
             <div class="card">
@@ -266,7 +182,6 @@
                     <li>Sudadera Frida Negra</li>
                     <li>$2800</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="6">Comprar</a>
             </div>
 
             <div class="card">
@@ -277,7 +192,6 @@
                     <li>Sudadera Frida Celeste</li>
                     <li>$2800</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="7">Comprar</a>
             </div>
 
             <div class="card">
@@ -288,7 +202,6 @@
                     <li>Sudadera Madonna Fluo</li>
                     <li>$2800</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="8">Comprar</a>
             </div>
 
             <div class="card">
@@ -298,7 +211,6 @@
                 <ul class="detalle">
                     <li>Sudadera Madonna Gris</li>
                     <li>$2800</li>
-                    <li><a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="9">Comprar</a></li>
                 </ul>
             </div>
 
@@ -310,7 +222,6 @@
                     <li>Sudadera Madonna Naranja</li>
                     <li>$2800</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="10">Comprar</a>
             </div>
 
         </div>
@@ -320,7 +231,6 @@
 
         <div id="tops" class="title">
             <h1>TOPS</h1>
-            <p class="pTops">Seleccione "comprar" en el modelo y estampado que desee</p>
         </div>
 
         <h2 class="modelosTitulo">MODELOS</h2>
@@ -332,7 +242,6 @@
                     <li>Tipo Básico</li>
                     <li>$2500</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="110">Comprar</a>
             </div>
 
             <div class="card">
@@ -341,7 +250,6 @@
                     <li>Tipo Competición</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="120">Comprar</a>
             </div>
 
             <div class="card">
@@ -350,7 +258,6 @@
                     <li>Tipo Greta</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="130">Comprar</a>
             </div>
 
             <div class="card">
@@ -359,7 +266,6 @@
                     <li>Tipo Marilyn</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="140">Comprar</a>
             </div>
 
             <div class="card">
@@ -368,7 +274,6 @@
                     <li>Tipo Scarlet</li>
                     <li>$2500</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="150">Comprar</a>
             </div>
         </div>
 
@@ -381,7 +286,6 @@
                 <ul class="detalle">
                     <li>Top Cayena</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="15">Comprar</a>
             </div>
 
             <div class="card">
@@ -389,7 +293,6 @@
                 <ul class="detalle">
                     <li>Top Cluny</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="16">Comprar</a>
             </div>
 
             <div class="card">
@@ -397,7 +300,6 @@
                 <ul class="detalle">
                     <li>Top Kalho</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="17">Comprar</a>
             </div>
 
             <div class="card">
@@ -405,7 +307,6 @@
                 <ul class="detalle">
                     <li>Top Mei</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="18">Comprar</a>
             </div>
 
             <div class="card">
@@ -413,7 +314,6 @@
                 <ul class="detalle">
                     <li>Top Briana</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="19">Comprar</a>
             </div>
 
             <div class="card">
@@ -421,7 +321,6 @@
                 <ul class="detalle">
                     <li>Top Golden</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="20">Comprar</a>
             </div>
 
 
@@ -430,7 +329,6 @@
                 <ul class="detalle">
                     <li>Top Azul Francia</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="57">Comprar</a>
             </div>
 
             <div class="card">
@@ -438,7 +336,6 @@
                 <ul class="detalle">
                     <li>Top Paradise</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="58">Comprar</a>
             </div>
 
             <div class="card">
@@ -446,7 +343,6 @@
                 <ul class="detalle">
                     <li>Top Petróleo</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="59">Comprar</a>
             </div>
 
             <div class="card">
@@ -454,7 +350,6 @@
                 <ul class="detalle">
                     <li>Top Aurora</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="60">Comprar</a>
             </div>
 
         </div>
@@ -471,7 +366,6 @@
                     <li>Top Manga Corta Alba</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="21">Comprar</a>
             </div>
 
             <div class="card">
@@ -480,7 +374,6 @@
                     <li>Top Manga Corta Black</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="22">Comprar</a>
             </div>
 
             <div class="card">
@@ -489,7 +382,6 @@
                     <li>Top Manga Corta Eira</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="23">Comprar</a>
             </div>
 
             <div class="card">
@@ -498,7 +390,6 @@
                     <li>Top Manga Corta Hawaii</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="24">Comprar</a>
             </div>
 
             <div class="card">
@@ -507,7 +398,6 @@
                     <li>Top Manga Corta Kalho</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="25">Comprar</a>
             </div>
 
             <div class="card">
@@ -516,7 +406,6 @@
                     <li>Top Manga Corta Kitty</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="26">Comprar</a>
             </div>
 
             <div class="card">
@@ -525,7 +414,6 @@
                     <li>Top Manga Corta Ingles</li>
                     <li>$3100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="61">Comprar</a>
             </div>
 
         </div>
@@ -543,7 +431,6 @@
                     <li>Biker Golden</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="27">Comprar</a>
             </div>
 
             <div class="card">
@@ -553,7 +440,6 @@
                     <li>Biker Frizze</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="28">Comprar</a>
             </div>
 
             <div class="card">
@@ -563,7 +449,6 @@
                     <li>Biker Ink</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="29">Comprar</a>
             </div>
 
             <div class="card">
@@ -573,7 +458,6 @@
                     <li>Biker Mei</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="30">Comprar</a>
             </div>
 
             <div class="card">
@@ -583,7 +467,6 @@
                     <li>Biker Wild</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="31">Comprar</a>
             </div>
 
             <div class="card">
@@ -593,7 +476,6 @@
                     <li>Biker Kalesi</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="32">Comprar</a>
             </div>
 
             <div class="card">
@@ -603,7 +485,6 @@
                     <li>Biker Celeste Pastel</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="33">Comprar</a>
             </div>
 
             <div class="card">
@@ -613,7 +494,6 @@
                     <li>Biker Esmeralda</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="34">Comprar</a>
             </div>
 
             <div class="card">
@@ -623,7 +503,6 @@
                     <li>Biker Gris Melange</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="35">Comprar</a>
             </div>
 
             <div class="card">
@@ -633,7 +512,6 @@
                     <li>Biker Terra</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="36">Comprar</a>
             </div>
 
 
@@ -653,7 +531,6 @@
                     <li>Short Briana</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="37">Comprar</a>
             </div>
 
             <div class="card">
@@ -663,7 +540,6 @@
                     <li>Short Forest Sprint</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="38">Comprar</a>
             </div>
 
             <div class="card">
@@ -673,7 +549,6 @@
                     <li>Short Hawaii</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="39">Comprar</a>
             </div>
 
             <div class="card">
@@ -683,7 +558,6 @@
                     <li>Short Jane</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="40">Comprar</a>
             </div>
 
             <div class="card">
@@ -693,7 +567,6 @@
                     <li>Short Gris Melange</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="41">Comprar</a>
             </div>
 
             <div class="card">
@@ -703,7 +576,6 @@
                     <li>Short Negro</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="42">Comprar</a>
             </div>
 
             <div class="card">
@@ -713,7 +585,6 @@
                     <li>Short Paradise</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="43">Comprar</a>
             </div>
 
             <div class="card">
@@ -723,7 +594,6 @@
                     <li>Short Tiffany</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="44">Comprar</a>
             </div>
 
             <div class="card">
@@ -733,7 +603,6 @@
                     <li>Short Storm</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="45">Comprar</a>
             </div>
 
             <div class="card">
@@ -743,7 +612,6 @@
                     <li>Short Titanium</li>
                     <li>$2700</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="46">Comprar</a>
             </div>
 
         </div>
@@ -763,7 +631,6 @@
                     <li>Calza Alba</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="47">Comprar</a>
             </div>
 
             <div class="card">
@@ -773,7 +640,6 @@
                     <li>Calza Berry</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="48">Comprar</a>
             </div>
 
             <div class="card">
@@ -783,7 +649,6 @@
                     <li>Calza Cayena</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="49">Comprar</a>
             </div>
 
             <div class="card">
@@ -793,7 +658,6 @@
                     <li>Calza Eira</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="50">Comprar</a>
             </div>
 
             <div class="card">
@@ -803,7 +667,6 @@
                     <li>Calza Fucsia</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="51">Comprar</a>
             </div>
 
             <div class="card">
@@ -813,7 +676,6 @@
                     <li>Calza Hawaii</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="52">Comprar</a>
             </div>
 
             <div class="card">
@@ -823,7 +685,6 @@
                     <li>Calza Jane</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="53">Comprar</a>
             </div>
 
             <div class="card">
@@ -833,7 +694,6 @@
                     <li>Calza Kitty</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="54">Comprar</a>
             </div>
 
             <div class="card">
@@ -843,7 +703,6 @@
                     <li>Calza Mei</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="55">Comprar</a>
             </div>
 
             <div class="card">
@@ -853,7 +712,6 @@
                     <li>Calza Terra</li>
                     <li>$3400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="56">Comprar</a>
             </div>
 
         </div>
@@ -871,7 +729,6 @@
                     <li>Capri Fucsia</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -881,7 +738,6 @@
                     <li>Capri Phoenix</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -891,7 +747,6 @@
                     <li>Capri Briana</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -901,7 +756,6 @@
                     <li>Capri Frizze</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -911,7 +765,6 @@
                     <li>Capri Rose Print</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
 
@@ -922,7 +775,6 @@
                     <li>Capri Sansa</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
 
@@ -933,7 +785,6 @@
                     <li>Capri Storm</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -943,7 +794,6 @@
                     <li>Capri Wild</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -953,7 +803,6 @@
                     <li>Capri Gris Melange</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -963,16 +812,15 @@
                     <li>Capri Petroleo</li>
                     <li>$3200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
 
         </div>
-        
-        <div id="kids"  class="separador-kids"></div>
-        
+
+        <div id="kids" class="separador-kids"></div>
+
         <div class="title-kids">
-            <h1>SECCIÓN KIDS</h1>    
+            <h1>SECCIÓN KIDS</h1>
         </div>
         <div class="container-detalle-kids">
 
@@ -984,7 +832,6 @@
                     <li>Short Pastel $2100</li>
                     <li>Cubrebotas Pastel $1200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -994,7 +841,6 @@
                     <li>Top $2100</li>
                     <li>Short $2100</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -1004,7 +850,6 @@
                     <li>Short Fucsia $2100</li>
                     <li>Cubrebotas Fucsia $1200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -1014,7 +859,6 @@
                     <li>Calza Pastel $2900</li>
                     <li>Cubrebotas Pastel $1200</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -1022,8 +866,7 @@
                 <ul class="detalle">
                     <li>Calza Lima Print</li>
                     <li>$2900</li>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
-                                </ul>
+                </ul>
             </div>
 
             <div class="card">
@@ -1031,8 +874,7 @@
                 <ul class="detalle">
                     <li>Calza Surf</li>
                     <li>$2900</li>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
-            </ul>
+                </ul>
             </div>
 
             <div class="card">
@@ -1040,8 +882,7 @@
                 <ul class="detalle">
                     <li>Calza combinada con Sally</li>
                     <li>$2900</li>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
-            </ul>
+                </ul>
             </div>
 
             <div class="card">
@@ -1049,11 +890,10 @@
                 <ul class="detalle">
                     <li>Top Ice Print $2100</li>
                     <li>Short Ice Print $2100</li>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
-                 </ul>
+                </ul>
             </div>
         </div>
-            <div class="abajo">
+        <div class="abajo">
 
             <div class="card">
                 <img src="Lemur/Kids/kidsGrupal.jpg">
@@ -1062,7 +902,6 @@
                     <li>Modelos: LIMA PRINT, PASTEL, PAINT, NAM</li>
                     <li>$2900</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
 
             <div class="card">
@@ -1072,125 +911,18 @@
                     <li>Modelos: AURORA, FUCSIA, PASTEL, LIMA PRINT</li>
                     <li>Top + Short + Cubrebotas = $5400</li>
                 </ul>
-                <a href="" class="btn btn-dark btn-sm agregar-carrito" data-id="">Comprar</a>
             </div>
         </div>
 
         </div>
-   
+
 
     </main>
-<!-- Caja check-out-->
-<section class="check-out" id="check-out">
-    <div id="cerrar">
-       <i class="fas fa-times"></i>
-    </div>
-    <h2 class="titulo-total">
-        TOTAL
-      <span id="precioFinal">
-          <!-- Aquí el precio fianl para check-out dinamico desde JS -->
-      </span>
-    </h2>
-    <form action="#">
-      <h4>Cliente</h4>
-      <div class="input-group1">
-        <div class="input-box1">
-          <input type="text" placeholder="Nombre" required class="name" />
-        </div>
-        <div class="input-box1">
-          <input type="text" placeholder="Apellido" required class="name" />
-        </div>
-      </div>
-      <div class="input-group1">
-        <div class="input-box1">
-          <input type="email" placeholder="Email" required class="name" />
-        </div>
-        <div class="input-box1">
-          <input type="tel" placeholder="Tel.." required class="name" />
-        </div>
-      </div>
-      <div class="input-group2">
-        <div class="input-box2">
-          <h4>Fecha y hora de entrega</h4>
-          <input type="text" placeholder="Dia" class="name2" />
-          <input type="text" placeholder="Mes" class="name2" />
-          <input type="text" placeholder="Horario" class="name2" />
-          <input type="radio" id="b1" name="tiempo" checked class="radio" />
-          <label for="b1">AM</label>
-          <input type="radio" id="b2" name="tiempo" class="radio" />
-          <label for="b2">PM</label>
-        </div>
-      </div>
-      <h4>Medios de pago</h4>
-      <div class="input-group3">
-        <div class="input-box3">
-          <input type="radio" name="pay" id="bc1" checked class="radio" />
-          <label for="bc1">
-            <span>
-              <i class="fa fa-cc-visa " tarjeta></i>
-            </span>
-          </label>
-          <input type="radio" name="pay" id="bc2" class="radio" />
-          <label for="bc2">
-            <span>
-              <i class="fa fa-cc-mastercard" tarjeta></i>
-            </span>
-          </label>
-          <input type="radio" name="pay" id="bc3" class="radio" />
-          <label for="bc3">
-            <span>
-              <i class="fab fa-cc-amex" tarjeta></i>
-            </span>
-          </label>
-        </div>
-      </div>
-      <div class="input-group4">
-        <div class="input-box4">
-          <input type="password" placeholder="Card number" required class="name3"/>
-        </div>
-      </div>
-      <div class="input-group4">
-        <div class="input-box">
-          <input type="password" placeholder="Card CVC" required class="name3"/>
-        </div>
-      </div>
-      <div class="select">
-        <div class="input-box">
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Mes</option>
-            <option value="1">01</option>
-            <option value="2">02</option>
-            <option value="3">03</option>
-            <option value="4">04</option>
-            <option value="5">05</option>
-            <option value="6">06</option>
-            <option value="7">07</option>
-            <option value="8">08</option>
-            <option value="9">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-          </select>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Año</option>
-            <option value="2021">2021</option>
-            <option value="2022">2022</option>
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-          </select>
-        </div>
-      </div>
-      <div class="input-boton">
-          <button type="Submit" boton-submit>Pagar</button>
-      </div>
-    </form>
-  </section>
+
     <footer class="footer-style">
         <div class="container">
             <div class="row">
                 <div class="direccion col-md-6 footer-col">
-
-
                     <img src="Iconos/ubicacion.png">
                     <a href="https://goo.gl/maps/wtXU127xA4jB7Krq5" target="_blank">Tancacha, Córdoba</a>
                     <span> Corrientes 770</span>
@@ -1219,23 +951,7 @@
             </div>
         </div>
     </footer>
-  
-    <!-- jquery -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      ></script>
-    <!-- Pluging Owl Carousel -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      ></script>
-    <!-- js bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <!-- My JS -->
-    <script src="main.js"></script>
+
 </body>
 
 </html>
