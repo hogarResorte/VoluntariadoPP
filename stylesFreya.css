@@ -24,49 +24,38 @@ header {
   background-color: black;
   display: flex;
   padding: 5px;
-  justify-content: space-between;
+  justify-content: center;
   color:rgb(223, 223, 50);
 }
 
 header .row {
+  display: flex;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header .back {
-  font-family: "Oswald", sans-serif;
-  height: max-content;
-  text-decoration: none;
-  margin: 0;
   display: inline;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+  height: max-content;
+  margin: 0;
 }
+
 
 .back a {
   text-decoration: none;
   color:rgb(223, 223, 50);
-}
-
-.navbar a::after {
-  color:rgb(223, 223, 50);
-}
-
-.navbar a:hover {
-  font-weight: 600;
-  color:white;
+  font-size: 18px;
 }
 
 .freyaLogo {
   display: inline;
 }
 
-.freyaLogo img{
-  padding: 0%;
-  margin: 0%;
-  margin: 0;
-}
-
-header img {
+header .freyaLogo img{
+  margin-left: 180px;
+  margin-right: 180px;
   width: 300px;
 }
 
@@ -76,22 +65,24 @@ nav {
 
 .navbar {
   display: inline;
-  align-items: center;
-  height: max-content;
   font-size: 20px;
   margin: 0;
+
 }
 
 .navbar a {
   display: inline-flex;
   font-family: "Oswald", sans-serif;
   color:rgb(223, 223, 50);
+  font-size: 18px;
 }
 
-.navbar a:hover {
+.navbar a:hover,
+.back a:hover {
   font-weight: 600;
   color:white;
 }
+
 
 
 .separador {
@@ -258,11 +249,17 @@ main .container-detalle .card a {
 footer {
   display: flex;
   background-color: black;
-   height: max-content;
   margin-top: 500px;
   padding-top: 30px;
   padding-bottom: 30px;
+  height: max-content;
   font-family: "Mulish", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .row {
+  display: flex;
 }
 
 footer .container .row img {
@@ -272,11 +269,12 @@ footer .container .row img {
   padding: 0;
   margin: 10px;
   vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
 
 
-footer .container.row a {
-  display: inline;
+footer .container .row a {
   color: white;
   font-family: "Mulish", sans-serif;
   text-decoration: none;
@@ -284,7 +282,7 @@ footer .container.row a {
 }
 
 footer  .container .row ul{
-  display: inline;
+  display: block;
   text-decoration: none;
   list-style: none;
   padding: 0;
@@ -308,41 +306,16 @@ footer .container  .row .direccion span{
 footer .container  .row .direccion {
   font-weight: 100;
   font-family: "Mulish", sans-serif;
+  margin-right: 250px;
 }
 
 footer .container .row .redes {
   font-family: "Mulish", sans-serif;
+  display: inline;
 }
 
 
 
-@media (max-width: 700px) {
-  * {
-    flex-direction: column;
-  }
-}
+@media screen and (max-width: 768px) {
 
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  table,
-  p,
-  img {
-    padding-right: 1em;
-    width: 100%;
-  }
-}
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-@media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-}
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
 }

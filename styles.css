@@ -211,6 +211,11 @@ footer .direccion {
 }
 
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
 
 @media (max-width: 700px) {
   * {
@@ -218,27 +223,15 @@ footer .direccion {
   }
 }
 
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  table,
-  p,
-  img {
-    padding-right: 1em;
-    width: 100%;
-  }
-}
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-@media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-}
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
-}
+
+/*Pantallas grandes (desktops de menos de 1200px)*/
+@media (max-width: 1199.98px) {}
+
+/*Pantallas medianas (tablets de menos de 992px)*/
+@media (max-width: 991.98px) {}
+
+/*Pantallas pequeñas (móviles en landscape de menos de 768px)*/
+@media (max-width: 767.98px) {}
+
+/*Pantallas muy pequeñas (móviles en portrait de menos de 576px)*/
+@media (max-width: 575.98px) {}

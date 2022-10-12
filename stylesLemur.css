@@ -47,31 +47,40 @@ header .back {
 .back a {
   text-decoration: none;
   color: #f37373;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .lemurLogo{
   display: inline;
+  
 }
 
 header .lemurLogo img{
   width: 200px;
   height: 100%;
+  margin-left: 180px;
+  margin-right: 180px;
 }
 
 .navbar {
   display: inline;
+  font-size: 18px;
   height: max-content;
-  font-size: 20px;
+}
+
+nav {
+  justify-content: space-between;
 }
 
 .navbar a {
   display: inline-flex;
   font-family: "Oswald", sans-serif;
   color: #f37373;
+  text-decoration: none;
 }
 
-.navbar a:hover {
+.navbar a:hover, 
+.back a:hover {
   font-weight: 600;
 }
 
@@ -410,75 +419,73 @@ header .lemurLogo img{
 }
 
 footer {
+  display: flex;
   background-color: black;
   margin-top: 100px;
-}
-
-footer .container {
-  justify-content: center;
-  font-family: "Lexend Deca", sans-serif;
-  height: max-content;
   padding-top: 30px;
   padding-bottom: 30px;
+  height: max-content;
+  font-family: "Mulish", sans-serif;
+  justify-content: center;
+  align-items: center;
 }
 
 footer .row {
-  width: 100%;
+  display: flex;
 }
 
-footer img {
-  display: inline;
+footer .container .row img {
   flex-direction: column;
   height: 30px;
   width: 35px;
   padding: 0;
-  margin: 0;
-  margin-bottom: 10px;
+  margin: 10px;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: center;
 }
 
-footer a {
-  display: inline;
+
+footer .container .row a {
   color: white;
+  font-family: "Mulish", sans-serif;
   text-decoration: none;
   margin: 10px;
-  font-weight: 100;
-  font-family: "Mulish", sans-serif;
 }
 
-footer ul {
-  display: inline;
+footer  .container .row ul{
+  display: block;
   text-decoration: none;
   list-style: none;
   padding: 0;
   margin: 0;
-  font-weight: 100;
   font-family: "Mulish", sans-serif;
 }
 
-footer .direccion {
-  width: max-content;
-  display: inline;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-weight: 100;
-  font-family: "Mulish", sans-serif;
-}
 
-footer .direccion img {
-  display: inline;
+footer .container .row .direccion img {
   vertical-align: middle;
 }
 
-footer .direccion span {
+footer .container  .row .direccion span{
   display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-left: 68px;
   font-weight: 100;
   font-family: "Mulish", sans-serif;
   color: white;
 }
+
+footer .container  .row .direccion {
+  font-weight: 100;
+  font-family: "Mulish", sans-serif;
+  margin-right: 250px;
+}
+
+footer .container .row .redes {
+  font-family: "Mulish", sans-serif;
+  display: inline;
+}
+
 
 @media (max-width: 700px) {
   * {
