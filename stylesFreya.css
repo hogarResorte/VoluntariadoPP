@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2? family=Lexend+Deca:wght@100;200;400;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@ header {
   display: flex;
   padding: 5px;
   justify-content: center;
-  color:rgb(223, 223, 50);
+  color: rgb(223, 223, 50);
 }
 
 header .row {
@@ -42,10 +42,9 @@ header .back {
   margin: 0;
 }
 
-
 .back a {
   text-decoration: none;
-  color:rgb(223, 223, 50);
+  color: rgb(223, 223, 50);
   font-size: 18px;
 }
 
@@ -53,7 +52,7 @@ header .back {
   display: inline;
 }
 
-header .freyaLogo img{
+header .freyaLogo img {
   margin-left: 180px;
   margin-right: 180px;
   width: 300px;
@@ -67,27 +66,25 @@ nav {
   display: inline;
   font-size: 20px;
   margin: 0;
-
 }
 
 .navbar a {
   display: inline-flex;
   font-family: "Oswald", sans-serif;
-  color:rgb(223, 223, 50);
+  color: rgb(223, 223, 50);
   font-size: 18px;
 }
 
 .navbar a:hover,
 .back a:hover {
   font-weight: 600;
-  color:white;
+  color: white;
 }
-
-
 
 .separador {
   margin-top: 0px;
   height: 400px;
+  width: 100%;
   background-image: url(Freya/freya5.1.PNG);
   background-repeat: no-repeat;
   background-color: rgb(243, 133, 93);
@@ -234,9 +231,12 @@ main .container-detalle .card:hover {
 
 main .container-detalle .card img {
   width: 100%;
- 
   padding: 0;
   margin: 0;
+}
+
+main .container-detalle .card .kenda {
+  height: 77%;
 }
 
 main .container-detalle .card a {
@@ -244,7 +244,6 @@ main .container-detalle .card a {
   justify-content: center;
   align-items: center;
 }
-
 
 footer {
   display: flex;
@@ -273,7 +272,6 @@ footer .container .row img {
   justify-content: center;
 }
 
-
 footer .container .row a {
   color: white;
   font-family: "Mulish", sans-serif;
@@ -281,7 +279,7 @@ footer .container .row a {
   margin: 10px;
 }
 
-footer  .container .row ul{
+footer .container .row ul {
   display: block;
   text-decoration: none;
   list-style: none;
@@ -290,12 +288,11 @@ footer  .container .row ul{
   font-family: "Mulish", sans-serif;
 }
 
-
 footer .container .row .direccion img {
   vertical-align: middle;
 }
 
-footer .container  .row .direccion span{
+footer .container .row .direccion span {
   display: block;
   margin-left: 68px;
   font-weight: 100;
@@ -303,7 +300,7 @@ footer .container  .row .direccion span{
   color: white;
 }
 
-footer .container  .row .direccion {
+footer .container .row .direccion {
   font-weight: 100;
   font-family: "Mulish", sans-serif;
   margin-right: 250px;
@@ -314,8 +311,169 @@ footer .container .row .redes {
   display: inline;
 }
 
+/*MEDIA QUERIES*/
 
+@media all and (max-width: 768px) {
+  div {
+    width: 100%;
+    height: auto;
+    margin-left: 4px;
+  }
+}
 
-@media screen and (max-width: 768px) {
+@media all and (max-width: 900px) {
+  /*HEADER*/
+
+  header {
+    width: max-content;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+  }
+
+  header .freyaLogo img {
+    width: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 15px;
+  }
+
+  header .back a {
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
+
+  header .navbar {
+    text-align: center;
+    display: block;
+    margin-right: 0%;
+  }
+
+  header .navbar a {
+    font-size: 12px;
+  }
+
+  .separador {
+    margin-top: 0px;
+    height: 200px;
+    background-image: url(Freya/freya5.2.PNG);
+    background-repeat: no-repeat;
+    background-color: rgb(243, 133, 93);
+    background-attachment: fixed;
+    background-size: contain;
+    transition: all 0.5s ease-in-out;
+    /*filter: blur(3px);*/
+  }
+
+  .separador {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-filter: brightness(0.35);
+  }
+  .separador:hover {
+    -webkit-filter: brightness(100%);
+  }
+
+  /*CATEGORIAS*/
+
+  main .container-productos {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 10px;
+  }
+
+  main .container-productos .card {
+    width: 90px;
+    height: 110px;
+  }
+
+  main .container-productos .card img {
+    width: 60px;
+    height: 88px;
+  }
+
+  main .container-productos h3 {
+    font-size: 8px;
+    align-items: center;
+  }
+
+  main .container-productos a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /*PRODUCTOS*/
+
+  main .title {
+    font-size: 15px;
+    margin-top: 590px;
+    color: white;
+  }
+
+  main .title-R {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: white;
+  }
+
+  main .container-detalle {
+    width: 100%;
+    height: 250px;
+  }
+
+  main .detalle {
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+
+  main .container-detalle .card {
+    width: 100px;
+    height: 200px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+  }
+
+  main .card span {
+    font-size: 10px;
+  }
+
+  main .container-detalle .card img {
+    width: 80px;
+  }
+
+  main .container-detalle .card .kenda {
+    height: 70%;
+  }
+
+  /*FOOTER*/
+  
+  footer {
+    width: 100%;
+    height: max-content;
+    display: flex;
+  }
+
+  footer .direccion {
+    display: inline;
+    margin-bottom: 10%;
+    text-align: center;
+    justify-content: center;
+  }
 
 }
