@@ -328,7 +328,7 @@ footer .container .row .redes {
   /*HEADER*/
 
   header {
-    width: max-content;
+    width: 100%;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -479,7 +479,7 @@ footer .container .row .redes {
   /*FOOTER*/
   
   footer {
-    width: max-content;
+    width:100%;
     display: flex;
     padding-top: 30px;
     margin-top: 580px;
