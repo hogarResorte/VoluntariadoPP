@@ -11,7 +11,9 @@ html,
 body {
   margin: 0;
   padding: 0;
+  margin-bottom: 0%;
 }
+
 
 body {
   background-color: black;
@@ -184,7 +186,8 @@ main .title-R {
   color: white;
 }
 
-main .container-detalle {
+main .container-detalle,
+.mus {
   width: 100%;
   max-width: 1200px;
   height: 350px;
@@ -440,6 +443,18 @@ footer .container .row .redes {
     margin-bottom: 2px;
   }
 
+  main .title-C {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 180px;
+    color: white;
+  }  
+
   main .container-detalle .card {
     width: 100px;
     height: 200px;
@@ -464,16 +479,27 @@ footer .container .row .redes {
   /*FOOTER*/
   
   footer {
-    width: 100%;
-    height: max-content;
+    width: max-content;
     display: flex;
+    padding-top: 30px;
+    margin-top: 580px;
+  }
+
+  footer .row {
+    width: 100%;
+    display: block;
   }
 
   footer .direccion {
-    display: inline;
+    display: block;
     margin-bottom: 10%;
-    text-align: center;
-    justify-content: center;
+    margin: 0%;
+    margin-bottom: 3%;
+  }
+
+  footer .redes {
+    margin: 0%;
+    display: block;
   }
 
 }
