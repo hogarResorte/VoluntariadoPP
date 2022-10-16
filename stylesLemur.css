@@ -718,25 +718,36 @@ footer .container .row .redes {
   /*FOOTER*/
   
   footer {
-    width:100%;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
     display: flex;
-    padding-top: 30px;
-    margin-top: 30px;
   }
 
   footer .row {
-    width: 100%;
     display: flex;
-  }
-
-  footer .direccion {
-    display: block;
-    margin-bottom: 10%;
-  }
-
-  footer .redes {
-    margin: 0%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }  
+  
+  
+  footer .container  .row .direccion span{
     display: block;
   }
+  
+  footer .container  .row .direccion {
+    display: block;
+    margin-right: 0%;
+    margin-bottom: 5%;
+  }
+  
+  footer .container .row .redes {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  
 
 }
