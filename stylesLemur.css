@@ -239,12 +239,6 @@ nav {
   margin: 0;
 }
 
-.btn {
-  margin-bottom: 5%;
-  margin-top: 10px;
-  font-family: "Oswald", sans-serif;
-}
-
 .tiposTop {
   display: flex;
   flex-wrap: wrap;
@@ -291,6 +285,11 @@ nav {
   margin: 0;
   justify-content: center;
   align-items: center;
+}
+
+.tops .card  {
+  width: 180px;
+  height: 360px;
 }
 
 .container-detalle .card a {
@@ -487,33 +486,257 @@ footer .container .row .redes {
 }
 
 
-@media (max-width: 700px) {
-  * {
-    flex-direction: column;
-  }
-}
 
-@media (min-width: 320px) {
-  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  table,
-  p,
-  img {
-    padding-right: 1em;
+/*MEDIA QUERIES*/
+
+
+@media all and (max-width: 900px) {
+  /*HEADER*/
+
+  header {
     width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
   }
-}
-@media (min-width: 480px) {
-  /* smartphones, Android phones, landscape iPhone */
-}
-@media (min-width: 600px) {
-  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
-}
-@media (min-width: 801px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-@media (min-width: 1025px) {
-  /* big landscape tablets, laptops, and desktops */
-}
-@media (min-width: 1281px) {
-  /* hi-res laptops and desktops */
+
+  header .row {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .lemurLogo img {
+    margin-left: 45%;
+    margin-right: 0%;
+    width: 110px;
+    justify-content: center;
+  }
+
+  header .back {
+    display: flex;
+  }
+
+  header .back a {
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header .navbar {
+    margin-left: 45%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  header .navbar a {
+    font-size: 12px;
+  }
+
+  main {
+    margin: 0;
+  }
+  .separador {
+    margin-top: 0px;
+    margin-left: 0%;
+    height: 180px;
+    background-image: url(Lemur/lemur8.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    transition: all 0.5s ease-in-out;
+    /*filter: blur(3px);*/
+  }
+
+  .separador {
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+    -webkit-filter: brightness(0.35);
+  }
+  .separador:hover {
+    -webkit-filter: brightness(100%);
+  }
+
+  /*CATEGORIAS*/
+
+  main .container-productos {
+    width: 100%;
+    height: 200px;
+    display: flex;
+  }
+
+  main .container-productos .card {
+    width: 70px;
+    height: 110px;
+  }
+
+  main .container-productos .card img {
+    width: 100%;
+    height: 80%;
+  }
+
+  main .container-productos h3 {
+    font-size: 10px;
+    margin-top: 0%;
+    padding: 0%;
+  }
+
+  main .container-productos a {
+    text-decoration: none;
+    color: black;
+  }
+
+  main .container-productos .card .kidsImg {
+    width: 100%;
+    height: 90px;
+  }
+
+  /*PRODUCTOS*/
+
+  main .title {
+    font-size: 12px;
+    margin-top: 380px;
+    margin-bottom: 0%;
+    color: white;
+  }
+
+  main .title-R {
+    font-size: 10px;
+    margin-top: 60px;
+    margin-bottom: 3px;
+    color: white;
+  }
+
+  main .container-detalle {
+    width: 100%;
+    height: 200px;
+  }
+
+  main .detalle {
+    font-size: 8.5px;
+    margin-bottom: 0%;
+  }
+
+  
+  main .container-detalle .card {
+    width: 70px;
+    height: 140px;
+    margin-bottom: 6px;
+  }
+
+  main .container-detalle .card img {
+    height: 70%;
+  }
+
+  .modelosTitulo {
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .remes .card {
+
+  }
+  
+  .tiposTop .card {
+    width: 115px;
+    height: 120px;
+    margin: 2px;
+  }
+  
+  .tiposTop .card img {
+    width: 100%;
+    height: 75%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tiposTop .detalle {
+    font-size: 9px;
+  }
+  
+  .tops .card {
+    width: 70px !important;
+    height: 120px !important;
+  }
+
+  .tops .card img {
+    height: 80% !important;
+  }
+
+  .container-detalle-kids .card {
+    width: 140px;
+    height: 300px;
+    justify-content: space-between;
+  }
+  
+  .container-detalle-kids .detalle {
+    margin-top: 6px;
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .container-detalle-kids .card img {
+    width: 100%;
+    height: 80%;
+  }
+  
+  .abajo .card {
+    width: 220px;
+    height: 280px;
+    justify-content: space-between;
+  }
+  
+  .abajo .detalle {
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .abajo .card img {
+    width: 100%;
+    height: 85%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .separador-kids {
+    height: 200px;
+    margin-top: 270px;
+    background-image: url(Lemur/Kids/kidsGrupal3.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  
+  /*FOOTER*/
+  
+  footer {
+    width:100%;
+    display: flex;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+
+  footer .row {
+    width: 100%;
+    display: flex;
+  }
+
+  footer .direccion {
+    display: block;
+    margin-bottom: 10%;
+  }
+
+  footer .redes {
+    margin: 0%;
+    display: block;
+  }
+
 }
