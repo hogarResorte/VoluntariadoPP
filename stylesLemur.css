@@ -27,6 +27,7 @@ header {
   padding: 15px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 header .row {
@@ -50,12 +51,11 @@ header .back {
   font-size: 18px;
 }
 
-.lemurLogo{
+.lemurLogo {
   display: inline;
-  
 }
 
-header .lemurLogo img{
+header .lemurLogo img {
   width: 200px;
   height: 100%;
   margin-left: 180px;
@@ -79,11 +79,82 @@ nav {
   text-decoration: none;
 }
 
-.navbar a:hover, 
+.navbar a:hover,
 .back a:hover {
   font-weight: 600;
 }
 
+/*Icono del Menú Hamburguesa*/
+
+.icono-menu {
+  margin-top: 20px;
+  position: relative;
+  z-index: 11;
+}
+
+.icono-menu img {
+  vertical-align: top;
+  width: 30px;
+  cursor: pointer;
+}
+
+/*Contenedor del menú*/
+.cont-menu {
+  background-color: #f37373;
+  width: 200px;
+  top: 0;
+  border-radius: 10px;
+  z-index: 11;
+  margin-top: 40px;
+  position: absolute;
+  right: 5%;
+}
+
+/*Estilos para JavaScript*/
+.active {
+  display: none;
+}
+
+.opacity {
+  background-color: #f37373;
+}
+
+/*Listado del menú*/
+
+.cont-menu ul {
+  list-style: none;
+  font-family: "Oswald", sans-serif;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.cont-menu ul li {
+  display: block;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: left;
+  padding: 5%;
+}
+
+.cont-menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding-left: 5%;
+  margin: 5%;
+}
+
+.cont-menu ul li:hover {
+  background-color: white;
+  color: #f37373;
+}
+
+.cont-menu ul li a:hover {
+  text-decoration: none;
+  color: #f37373;
+  padding: 15%;
+}
+
+/*Separador*/
 .separador {
   height: 400px;
   background-image: url(Lemur/lemur7.jpg);
@@ -92,10 +163,8 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   transition: all 0.5s ease-in-out;
-  /*filter: blur(3px);*/
+  z-index: 1;
 }
-
-/*.separador:hover {filter: blur(0px);}*/
 .separador {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
@@ -209,7 +278,6 @@ nav {
   margin: 0;
 }
 
-
 .container-detalle .card {
   width: 180px;
   height: 380px;
@@ -287,7 +355,7 @@ nav {
   align-items: center;
 }
 
-.tops .card  {
+.tops .card {
   width: 180px;
   height: 360px;
 }
@@ -444,7 +512,6 @@ footer .container .row img {
   justify-content: center;
 }
 
-
 footer .container .row a {
   color: white;
   font-family: "Mulish", sans-serif;
@@ -452,7 +519,7 @@ footer .container .row a {
   margin: 10px;
 }
 
-footer  .container .row ul{
+footer .container .row ul {
   display: block;
   text-decoration: none;
   list-style: none;
@@ -461,12 +528,11 @@ footer  .container .row ul{
   font-family: "Mulish", sans-serif;
 }
 
-
 footer .container .row .direccion img {
   vertical-align: middle;
 }
 
-footer .container  .row .direccion span{
+footer .container .row .direccion span {
   display: block;
   margin-left: 68px;
   font-weight: 100;
@@ -474,7 +540,7 @@ footer .container  .row .direccion span{
   color: white;
 }
 
-footer .container  .row .direccion {
+footer .container .row .direccion {
   font-weight: 100;
   font-family: "Mulish", sans-serif;
   margin-right: 250px;
@@ -485,10 +551,7 @@ footer .container .row .redes {
   display: inline;
 }
 
-
-
 /*MEDIA QUERIES*/
-
 
 @media all and (max-width: 900px) {
   /*HEADER*/
@@ -511,14 +574,15 @@ footer .container .row .redes {
   }
 
   header .lemurLogo img {
-    margin-left: 45%;
-    margin-right: 0%;
-    width: 110px;
+    margin-left: 70px;
+    margin-right: 30px;
+    width: 100px;
     justify-content: center;
   }
 
   header .back {
     display: flex;
+    margin-top: 0%;
   }
 
   header .back a {
@@ -535,6 +599,64 @@ footer .container .row .redes {
 
   header .navbar a {
     font-size: 12px;
+  }
+
+  /*Icono del Menú Hamburguesa*/
+
+  .icono-menu {
+    position: relative;
+    z-index: 11;
+    margin-top: 0%;
+    margin-left: 40px;
+  }
+
+  .icono-menu img {
+    width: 18px;
+    cursor: pointer;
+  }
+
+  /*Contenedor del menú*/
+  .cont-menu {
+    background-color: #f37373;
+    width: 150px;
+    top: 0;
+    border-radius: 10px;
+    z-index: 11;
+    margin-top: 35px;
+    position: absolute;
+    right: 5%;
+  }
+
+  /*Listado del menú*/
+
+  .cont-menu ul {
+    list-style: none;
+    font-family: "Oswald", sans-serif;
+  }
+
+  .cont-menu ul li {
+    display: block;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 3%;
+    text-align: left;
+  }
+
+  .cont-menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10%;
+  }
+
+  .cont-menu ul li:hover {
+    background-color: white;
+    color: #f37373;
+  }
+
+  .cont-menu ul li a:hover {
+    text-decoration: none;
+    color: #f37373;
+    padding: 10%;
   }
 
   main {
@@ -621,7 +743,6 @@ footer .container .row .redes {
     margin-bottom: 0%;
   }
 
-  
   main .container-detalle .card {
     width: 70px;
     height: 140px;
@@ -638,16 +759,12 @@ footer .container .row .redes {
     margin-bottom: 10px;
   }
 
-  .remes .card {
-
-  }
-  
   .tiposTop .card {
     width: 115px;
     height: 120px;
     margin: 2px;
   }
-  
+
   .tiposTop .card img {
     width: 100%;
     height: 75%;
@@ -660,7 +777,7 @@ footer .container .row .redes {
   .tiposTop .detalle {
     font-size: 9px;
   }
-  
+
   .tops .card {
     width: 70px !important;
     height: 120px !important;
@@ -675,7 +792,7 @@ footer .container .row .redes {
     height: 300px;
     justify-content: space-between;
   }
-  
+
   .container-detalle-kids .detalle {
     margin-top: 6px;
     width: 100%;
@@ -686,20 +803,20 @@ footer .container .row .redes {
     width: 100%;
     height: 80%;
   }
-  
+
   .abajo .card {
     width: 220px;
     height: 280px;
     justify-content: space-between;
   }
-  
+
   .abajo .detalle {
     width: 100%;
     height: 100px;
     align-items: center;
     justify-content: center;
   }
-  
+
   .abajo .card img {
     width: 100%;
     height: 85%;
@@ -714,9 +831,9 @@ footer .container .row .redes {
     background-size: contain;
     background-repeat: repeat-y;
   }
-  
+
   /*FOOTER*/
-  
+
   footer {
     margin-top: 10px;
     padding-top: 20px;
@@ -730,24 +847,21 @@ footer .container .row .redes {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }  
-  
-  
-  footer .container  .row .direccion span{
+  }
+
+  footer .container .row .direccion span {
     display: block;
   }
-  
-  footer .container  .row .direccion {
+
+  footer .container .row .direccion {
     display: block;
     margin-right: 0%;
     margin-bottom: 5%;
   }
-  
+
   footer .container .row .redes {
     display: block;
     align-items: center;
     justify-content: center;
   }
-  
-
 }

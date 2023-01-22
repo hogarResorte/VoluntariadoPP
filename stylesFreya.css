@@ -60,8 +60,9 @@ header .freyaLogo img {
   width: 300px;
 }
 
-nav {
+.nav {
   display: inline;
+  flex-wrap:wrap-reverse;
 }
 
 .navbar {
@@ -75,6 +76,12 @@ nav {
   font-family: "Oswald", sans-serif;
   color: rgb(223, 223, 50);
   font-size: 18px;
+}
+
+.navbar .nav ul{
+  justify-content: center;
+  align-items: center;
+  width: min-content;
 }
 
 .navbar a:hover,
@@ -161,7 +168,8 @@ main .container-productos a {
   color: black;
 }
 
-main .title {
+main .title, 
+.title-C {
   display: block;
   text-align: center;
   justify-content: center;
@@ -238,9 +246,6 @@ main .container-detalle .card img {
   margin: 0;
 }
 
-main .container-detalle .card .kenda {
-  height: 77%;
-}
 
 main .container-detalle .card a {
   text-align: center;
