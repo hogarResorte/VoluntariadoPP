@@ -150,8 +150,8 @@ body {
 /*ESTAMPAS*/
 
 .estampas img {
-    width: 95%;
-    height: 95%;
+    width: 130px;
+    height: 130px;
     border: 3px solid;
     border-color: black;
     margin: 5px;
@@ -207,8 +207,8 @@ footer {
 
     .estampas img{
         display: inline;
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
     
     fieldset {
