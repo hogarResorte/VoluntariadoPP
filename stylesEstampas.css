@@ -15,6 +15,7 @@ body {
 /*HEADER*/
 
   header {
+    width: 100%;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -149,8 +150,8 @@ body {
 /*ESTAMPAS*/
 
 .estampas img {
-    width: 150px;
-    height: 150px;
+    width: 95%;
+    height: 95%;
     border: 3px solid;
     border-color: black;
     margin: 5px;
@@ -199,6 +200,34 @@ footer {
     color:rgb(156, 155, 155);
     margin-left: 12%;
   }
+
+  /*MEDIA QUERIES*/
+
+  @media all and (max-width: 900px) {
+
+    .row{
+        display: flex;
+    
+    }
+
+    .estampas img{
+        display: inline;
+        width: 100px;
+        height: 100px;
+    }
+    
+    fieldset {
+        display: inline;
+    }
+
+    .col-lg-2 {
+        width: 120px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
 
 
   
