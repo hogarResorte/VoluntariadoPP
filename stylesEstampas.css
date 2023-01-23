@@ -19,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     position: relative;
+    margin-bottom: 5%;
   }
   
   header .row {
@@ -47,10 +48,11 @@ body {
   }
   
   header .lemurLogo img {
-    width: 200px;
+    width: 180px;
     height: 100%;
     display: inline;
     text-align: center;
+    padding: 3%;
   }
   
   .navbar {
@@ -143,28 +145,6 @@ body {
     padding: 15%;
   }
   
-  /*Separador*/
-
-  .separador {
-    height: 200px;
-    background-image: url(Lemur/lemur2.jpg);
-    background-repeat: no-repeat;
-    background-color: rgb(243, 133, 93);
-    background-size: cover;
-    background-attachment: fixed;
-    transition: all 0.5s ease-in-out;
-    z-index: 1;
-    margin-bottom: 2%;
-  }
-  .separador {
-    -webkit-transition: all 0.7s ease;
-    transition: all 0.7s ease;
-    -webkit-filter: brightness(0.35);
-  }
-  .separador:hover {
-    -webkit-filter: brightness(100%);
-  }
-
 
 /*ESTAMPAS*/
 
