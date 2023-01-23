@@ -18,6 +18,7 @@ body {
   background-color: #f37373;
 }
 
+
 header .container {
   max-height: 120px;
 }
@@ -108,15 +109,13 @@ nav {
   margin-top: 40px;
   position: absolute;
   right: 5%;
+  box-shadow: white 5px;
+
 }
 
 /*Estilos para JavaScript*/
 .active {
   display: none;
-}
-
-.opacity {
-  background-color: #f37373;
 }
 
 /*Listado del menú*/
@@ -142,6 +141,7 @@ nav {
   padding-left: 5%;
   margin: 5%;
 }
+
 
 .cont-menu ul li:hover {
   background-color: white;
@@ -173,6 +173,8 @@ nav {
 .separador:hover {
   -webkit-filter: brightness(100%);
 }
+
+
 
 .container-productos {
   width: 100%;
@@ -666,7 +668,6 @@ footer .container .row .redes {
     margin-top: 0px;
     margin-left: 0%;
     height: 180px;
-    background-image: url(Lemur/lemur8.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
