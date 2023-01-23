@@ -169,8 +169,8 @@ fieldset {
 footer {
     display:inline-flex;
     background-color: black;
-    padding: 2%;
     width: 100%;
+    padding-top: 2%;
   }
   
   footer .container .row img {
