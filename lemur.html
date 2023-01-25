@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Iconos/logoAG-redondo.png" />
     <link rel="stylesheet" href="whatsapp.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="css/sweetalert2.min.css">
@@ -130,39 +133,22 @@
             <div class="card">
                 <img src="Lemur/Remeras/remeraAmeliaCel.jpg" onmouseover="src=('Lemur/Remeras/remeraAmeliaCel2.jpg')"
                     onmouseout="src=('Lemur/Remeras/remeraAmeliaCel.jpg')">
-                <ul class="detalle">
-                    <li class="titulo">Remera Amelia Celeste</li>
-                    <li>$3100</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/remeraAmeliaNar.jpg" onmouseover="src=('Lemur/Remeras/remeraAmeliaNar2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/remeraAmeliaNar.jpg')">
-                <ul class="detalle">
-                    <li>Remera Amelia Naranja</li>
-                    <li>$3100</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/remeraAmeliaBlanco.jpg"
-                    onmouseover="src=('Lemur/Remeras/remeraAmeliaBlanco2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/remeraAmeliaBlanco.jpg')">
-                <ul class="detalle">
-                    <li>Remera Amelia Blanca</li>
-                    <li>$3100</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/remeraAmeliaNegro.jpg"
-                    onmouseover="src=('Lemur/Remeras/remeraAmeliaNegro2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/remeraAmeliaNegro.jpg')">
-                <ul class="detalle">
-                    <li>Remera Amelia Negra</li>
-                    <li>$3100</li>
-                </ul>
+                    <ul class="detalle">
+                        <li>Remera Amelia</li>
+                        <li>$3100</li>
+                    </ul>
+                    <div class="dropdown">
+                        <button class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Ver Colores
+                        <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Celeste</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Naranja</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Blanco</a></li>
+                          <!-- <li role="presentation" class="divider"></li>-->
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Negro</a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fucsia</a></li>
+                        </ul>
+                      </div>
             </div>
 
             <div class="card">
@@ -170,29 +156,19 @@
                     onmouseover="src=('Lemur/Remeras/sudaderaFridaChicle2.jpg')"
                     onmouseout="src=('Lemur/Remeras/sudaderaChicleFrida.jpg')">
                 <ul class="detalle">
-                    <li>Sudadera Frida Chicle</li>
+                    <li>Sudadera Frida</li>
                     <li>$2800</li>
                 </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/sudaderaFridaNegro.jpg"
-                    onmouseover="src=('Lemur/Remeras/sudaderaFridaNegro2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/sudaderaFridaNegro.jpg')">
-                <ul class="detalle">
-                    <li>Sudadera Frida Negra</li>
-                    <li>$2800</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/sudaderaFridaCeleste.jpg"
-                    onmouseover="src=('Lemur/Remeras/sudaderaFridaCeleste2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/sudaderaFridaCeleste.jpg')">
-                <ul class="detalle">
-                    <li>Sudadera Frida Celeste</li>
-                    <li>$2800</li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Ver Colores
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Chicle</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Negro</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Celeste</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Verde Agua</a></li>
+                    </ul>
+                  </div>
             </div>
 
             <div class="card">
@@ -200,34 +176,22 @@
                     onmouseover="src=('Lemur/Remeras/sudaderaMadonnaAmarilloFluo2.jpg')"
                     onmouseout="src=('Lemur/Remeras/sudaderaMadonnaAmarilloFluo.jpg')">
                 <ul class="detalle">
-                    <li>Sudadera Madonna Fluo</li>
+                    <li>Sudadera Madonna</li>
                     <li>$2800</li>
                 </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/sudaderaMadonnaMelange.jpg"
-                    onmouseover="src=('Lemur/Remeras/sudaderaMadonnaMelange2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/sudaderaMadonnaMelange.jpg')">
-                <ul class="detalle">
-                    <li>Sudadera Madonna Gris</li>
-                    <li>$2800</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Remeras/sudaderaMadonnaNaranja.jpg"
-                    onmouseover="src=('Lemur/Remeras/sudaderaMadonnaNaranja2.jpg')"
-                    onmouseout="src=('Lemur/Remeras/sudaderaMadonnaNaranja.jpg')">
-                <ul class="detalle">
-                    <li>Sudadera Madonna Naranja</li>
-                    <li>$2800</li>
-                </ul>
+                <div class="dropdown">
+                    <button class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Ver Colores
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Fluo</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Melange</a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Naranja</a></li>
+                    </ul>
+                  </div>
             </div>
 
         </div>
 
-        </div>
 
 
         <div id="tops" class="title">
@@ -278,82 +242,9 @@
             </div>
         </div>
 
-        <h2 class="modelosTitulo">ESTAMPADOS</h2>
-
-        <div class="tops container-detalle">
-
-            <div class="card">
-                <img src="Lemur/Tops/topMCayena.jpg">
-                <ul class="detalle">
-                    <li>Top Cayena</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topMCluny.jpg">
-                <ul class="detalle">
-                    <li>Top Cluny</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topMKalho.jpg">
-                <ul class="detalle">
-                    <li>Top Kalho</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topMMei.jpg">
-                <ul class="detalle">
-                    <li>Top Mei</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topCBriana.jpg">
-                <ul class="detalle">
-                    <li>Top Briana</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topCGolden.jpg">
-                <ul class="detalle">
-                    <li>Top Golden</li>
-                </ul>
-            </div>
+        <h2 class="modelosTitulo"><a href="estampados.html">ESTAMPADOS<span class="caret"></span></a></h2>
 
 
-            <div class="card">
-                <img src="Lemur/Tops/topGFrancia.jpg">
-                <ul class="detalle">
-                    <li>Top Azul Francia</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topCParadise.jpg">
-                <ul class="detalle">
-                    <li>Top Paradise</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topGPetroleo.jpg">
-                <ul class="detalle">
-                    <li>Top Petróleo</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Tops/topSAurora.jpg">
-                <ul class="detalle">
-                    <li>Top Aurora</li>
-                </ul>
-            </div>
-
-        </div>
 
         <div id="topsManga" class="title">
             <h1>TOPS MANGA CORTA</h1>
@@ -954,6 +845,11 @@
     </footer>
 
     <script src="app.js"></script>
+    <script src=
+    "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+                integrity=
+    "sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+               crossorigin="anonymous"></script>
 </body>
 
 </html>
