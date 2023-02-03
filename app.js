@@ -7,4 +7,3 @@ iconoMenu.addEventListener('click', (e) => {
     document.body.classList.toggle('opacity');
 
 });
-

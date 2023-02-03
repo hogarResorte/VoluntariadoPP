@@ -320,42 +320,106 @@
 
         <div id="tops" class="title">
             <h1>TOPS</h1>
-            <div class="colores">
-            <h4 class="tituloColores" style="margin-right: 10px;">COLORES: </h4>
-            <button class="botonColor" id="button-negro" style="background-color:#000; border-color: white;" title="Negro"></button>
-            <button class="botonColor" id="button-grismelange" style="background-color:#818080;" title="Gris Melange"></button>
-            <button class="botonColor" id="button-blanco"  style="background-color:#fff;" title="Blanco"></button>
-            <button class="botonColor" id="button-terra"  style="background-color:#a15c2e;" title="Terra"></button>
-            <button class="botonColor" id="button-rojo"  style="background-color:#e0343f;" title="Rojo"></button>
-            <button class="botonColor" id="button-bluemelange" style="background-color:#8ba7f5;" title="Blue Melange"></button>
-            <button class="botonColor" id="button-magentamelange" style="background-color:#c96273;" title="Magenta Melange"></button>
-            <button class="botonColor" id="button-aquamelange" style="background-color:#89e1e4;" title="Aqua Melange"></button>
-            <button class="botonColor" id="button-lavandamelange" style="background-color:#cdacf8;" title="Lavanda Melange"></button>
-            <button class="botonColor" id="button-rosamelange" style="background-color:#f37ed6;" title="Rosa Melange"></button>
-            <button class="botonColor" id="button-verdemilitar" style="background-color:#527208;" title="Verde Militar"></button>
-            <button class="botonColor" id="button-petroleo" style="background-color:#225677;" title="Petroleo"></button>
-            <button class="botonColor" id="button-rosaviejo" style="background-color:#eca5c9;" title="Rosa Viejo"></button>
-            <button class="botonColor" id="button-bordomelange" style="background-color:#571d2e;" title="Bordo Melange"></button>
-            <button class="botonColor" id="button-turquesa" style="background-color:#80d2f8;" title="Turquesa"></button>
-            <button class="botonColor" id="button-durazno" style="background-color:#ee896a;" title="Durazno"></button>
-            <button class="botonColor" id="button-zanahoria" style="background-color:#fd7c31;" title="Zanahoria"></button>
-            <button class="botonColor" id="button-verdebenetton" style="background-color:#3eb34d;" title="Verde Benetton"></button>
-            <button class="botonColor" id="button-verdeingles" style="background-color:#305a4e;" title="Verde Inglés"></button>
-            <button class="botonColor" id="button-morado" style="background-color:#b95c94;" title="Morado"></button>
-            <button class="botonColor" id="button-petroleomelange" style="background-color:#355d75;" title="Petroleo Melange"></button>
-            <button class="botonColor" id="button-fucsia" style="background-color:#eb3972;" title="Fucsia"></button>
-            <button class="botonColor" id="button-plomomelange" style="background-color:#474546;" title="Plomo Melange"></button>
-            <button class="botonColor" id="button-mostaza" style="background-color:#e4ba47;" title="Mostaza"></button>
-            <button class="botonColor" id="button-chicle" style="background-color:#f76ea2;" title="Chicle"></button>
-            <button class="botonColor" id="button-verdeesmeralda" style="background-color:#2fdabd;" title="Verde Esmeralda"></button>
-            <button class="botonColor" id="button-azulmarino" style="background-color:#253e91;" title="Azul Marino"></button>
-            <button class="botonColor" id="button-celestepastel"  style="background-color:#87b7d8;" title="Celeste Pastel"></button>
-            <button class="botonColor" id="button-lilapastel"  style="background-color:#c6a2d4;" title="Lila Pastel"></button>
-            <button class="botonColor" id="button-azulfrancia"  style="background-color:#095cec;" title="Azul Francia"></button>
-            <button class="botonColor" id="button-violeta" style="background-color:#6a2592;" title="Violeta"></button>
-            <button class="botonColor" id="button-grisplomo" style="background-color:#5d5e5f;" title="Gris Plomo"></button>
-            <a class="botonEstampas" href="estampados.html">ESTAMPAS</a>
-        </div>
+            <div class="dropdown colores">
+                <button class="verColores" class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1"
+                    data-toggle="dropdown">Ver
+                    Colores
+                    <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu">
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-negro" style="background-color:#000; border-color: white;"
+                                title="Negro"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-grismelange" style="background-color:#818080;"
+                                title="Gris Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-blanco" style="background-color:#fff;" title="Blanco"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-terra" style="background-color:#a15c2e;" title="Terra"></button></a> </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor" id="button-rojo"
+                                style="background-color:#e0343f;" title="Rojo"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-bluemelange" style="background-color:#8ba7f5;"
+                                title="Blue Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonColor"
+                                id="button-magentamelange" style="background-color:#c96273;"
+                                title="Magenta Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-aquamelange" style="background-color:#89e1e4;"
+                                title="Aqua Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonColor"
+                                id="button-lavandamelange" style="background-color:#cdacf8;"
+                                title="Lavanda Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-rosamelange" style="background-color:#f37ed6;"
+                                title="Rosa Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-verdemilitar" style="background-color:#527208;"
+                                title="Verde Militar"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-petroleo" style="background-color:#225677;" title="Petroleo"></button></a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-rosaviejo" style="background-color:#eca5c9;" title="Rosa Viejo"></button></a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-bordomelange" style="background-color:#571d2e;"
+                                title="Bordo Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-turquesa" style="background-color:#80d2f8;" title="Turquesa"></button></a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-durazno" style="background-color:#ee896a;" title="Durazno"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-zanahoria" style="background-color:#fd7c31;" title="Zanahoria"></button></a>
+                    </li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-verdebenetton" style="background-color:#3eb34d;"
+                                title="Verde Benetton"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-verdeingles" style="background-color:#305a4e;"
+                                title="Verde Inglés"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-morado" style="background-color:#b95c94;" title="Morado"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-petroleomelange" style="background-color:#355d75;"
+                                title="Petroleo Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-fucsia" style="background-color:#eb3972;" title="Fucsia"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-plomomelange" style="background-color:#474546;"
+                                title="Plomo Melange"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-mostaza" style="background-color:#e4ba47;" title="Mostaza"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-chicle" style="background-color:#f76ea2;" title="Chicle"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-verdeesmeralda" style="background-color:#2fdabd;"
+                                title="Verde Esmeralda"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-azulmarino" style="background-color:#253e91;"
+                                title="Azul Marino"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-celestepastel" style="background-color:#87b7d8;"
+                                title="Celeste Pastel"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-lilapastel" style="background-color:#c6a2d4;"
+                                title="Lila Pastel"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-azulfrancia" style="background-color:#095cec;"
+                                title="Azul Francia"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-violeta" style="background-color:#6a2592;" title="Violeta"></button></a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                id="button-grisplomo" style="background-color:#5d5e5f;" title="Gris Plomo"></button></a>
+                    </li>
+                </ul>
+                
+                <button class="verColores" class="btn-xs btn-dark dropdown-toggle" href="estampados.html">Ver
+                    Estampas</button>
+            </div>
+
+
         </div>
 
         <div class="tiposTop">
@@ -402,7 +466,7 @@
             </div>
 
             <div class="card">
-                <img id="cleo" src="Lemur/Tops/Tipos/topCleoPetroleo.jpg">
+                <img id="cleo" src="Lemur/Tops/Tipos/tipoCleo.jpg">
                 <ul class="detalle">
                     <li>Top Cleo</li>
                     <li>$2500</li>
@@ -410,7 +474,7 @@
             </div>
 
             <div class="card">
-                <img id="kim" src="Lemur/Tops/Tipos/topKimNegro.jpg">
+                <img id="kim" src="Lemur/Tops/Tipos/tipoKim.jpg">
                 <ul class="detalle">
                     <li>Top Kim</li>
                     <li>$2500</li>
@@ -418,7 +482,7 @@
             </div>
 
             <div class="card">
-                <img id="myImage" src="Lemur/Tops/Tipos/topTaylorNegro.jpg">
+                <img id="myImage" src="Lemur/Tops/Tipos/tipoTaylor.jpg">
                 <ul class="detalle">
                     <li>Top Taylor</li>
                     <li>$2500</li>
@@ -1074,17 +1138,17 @@
                     break;
                 case 7:
                     image.src = "Lemur/Tops/basicoMagentaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionMagentaMelange.jpg"; 
+                    image2.src = "Lemur/Tops/competicionMagentaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaMagentaMelange.jpg";
                     break;
                 case 8:
                     image.src = "Lemur/Tops/basicoAquaMelange.jpg";
                     image2.src = "Lemur/Tops/competicionAquaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaAquaMelange.jpg";
-                     break;
+                    break;
                 case 9:
                     image.src = "Lemur/Tops/basicoLavandaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionLavandaMelange.jpg"; 
+                    image2.src = "Lemur/Tops/competicionLavandaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaLavandaMelange.jpg";
                     break;
                 case 10:
@@ -1096,7 +1160,7 @@
                     image.src = "Lemur/Tops/basicoVerdeMilitar.jpg";
                     image2.src = "Lemur/Tops/competicionVerdeMilitar.jpg";
                     image3.src = "Lemur/Tops/gretaVerdeMilitar.jpg";
-                     break;
+                    break;
                 case 12:
                     image.src = "Lemur/Tops/basicoPetroleo.jpg";
                     image2.src = "Lemur/Tops/competicionPetroleo.jpg";
