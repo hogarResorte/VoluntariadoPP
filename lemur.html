@@ -387,7 +387,7 @@
                     <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
                                 id="button-fucsia" style="background-color:#eb3972;" title="Fucsia"></button></a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
-                                id="button-plomomelange" style="background-color:#474546;"
+                                id="button-plomomelange" style="background-color:#494949;"
                                 title="Plomo Melange"></button></a></li>
                     <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
                                 id="button-mostaza" style="background-color:#e4ba47;" title="Mostaza"></button></a></li>
@@ -414,9 +414,8 @@
                                 id="button-grisplomo" style="background-color:#5d5e5f;" title="Gris Plomo"></button></a>
                     </li>
                 </ul>
-                
-                <button class="verColores" class="btn-xs btn-dark dropdown-toggle" href="estampados.html">Ver
-                    Estampas</button>
+                <button class="verColores" class="btn-xs btn-dark dropdown-toggle"><a href="estampados.html">Ver
+                    Estampas</a></button>
             </div>
 
 
@@ -466,7 +465,7 @@
             </div>
 
             <div class="card">
-                <img id="cleo" src="Lemur/Tops/Tipos/tipoCleo.jpg">
+                <img id="cleo" src="Lemur/Tops/Tipos/cleoPetroleo.jpg">
                 <ul class="detalle">
                     <li>Top Cleo</li>
                     <li>$2500</li>
@@ -482,7 +481,7 @@
             </div>
 
             <div class="card">
-                <img id="myImage" src="Lemur/Tops/Tipos/tipoTaylor.jpg">
+                <img id="taylor" src="Lemur/Tops/Tipos/tipoTaylor.jpg">
                 <ul class="detalle">
                     <li>Top Taylor</li>
                     <li>$2500</li>
@@ -1092,8 +1091,23 @@
 
 
     <!--CAMBIAR COLORES EN PRENDAS-->
-    <!--faltan: Competicion GRIS PLOMO - VIOLETA - AZUL MARINO 
-    Greta AZUL MARINO - -->
+    <!--faltan: 
+        
+    Competicion GRIS PLOMO - VIOLETA - AZUL MARINO 
+
+    Greta AZUL MARINO 
+
+    Marilyn AZUL FRANCIA
+
+    Scarlet AZUL MARINO
+
+    Cleo TODOS MENOS DURAZNO - PETROLEO - MOSTAZA
+
+    Taylor TODOS MENOS NEGRO - BLANCO - ROJO - ROSA VIEJO - AZUL FRANCIA - 
+    VERDE MILITAR - VERDE BENETTON - VERDE INGLES - FUCSIA - CHICLE - VIOLETA
+
+    Kim muchos
+     -->
     <script>
 
         const image = document.querySelector("#basico");
@@ -1102,7 +1116,9 @@
         const image4 = document.querySelector("#marilyn");
         const image5 = document.querySelector("#scarlet");
         const image6 = document.querySelector("#cleo");
-        const image7 = document.querySelector("#kim");
+        const image7 = document.querySelector("#taylor");
+        const image8 = document.querySelector("#kim");
+
 
         function changeImage(color) {
             switch (color) {
@@ -1110,161 +1126,258 @@
                     image.src = "Lemur/Tops/Tipos/tipoBasico.jpg";
                     image2.src = "Lemur/Tops/Tipos/tipoCompeticion.jpg";
                     image3.src = "Lemur/Tops/Tipos/tipoGreta.jpg";
+                    image4.src = "Lemur/Tops/Tipos/tipoMarilyn.jpg";
+                    image5.src = "Lemur/Tops/Tipos/tipoScarlet.jpg";
+                    image7.src = "Lemur/Tops/Tipos/tipoTaylor.jpg";
+                    image8.src = "Lemur/Tops/Tipos/tipoKim.jpg";
                     break;
                 case 2:
                     image.src = "Lemur/Tops/basicoGrisMelange.jpg";
                     image2.src = "Lemur/Tops/competicionGrisMelange.jpg";
                     image3.src = "Lemur/Tops/gretaGrisMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynGrisMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletGrisMelange.jpg";
+                    
                     break;
                 case 3:
                     image.src = "Lemur/Tops/basicoBlanco.jpg";
                     image2.src = "Lemur/Tops/competicionBlanco.jpg";
                     image3.src = "Lemur/Tops/gretaBlanco.jpg";
+                    image4.src = "Lemur/Tops/marilynBlanco.jpg";
+                    image5.src = "Lemur/Tops/scarletBlanco.jpg";
+                    image7.src = "Lemur/Tops/taylorBlanco.jpg";
+                    image8.src = "Lemur/Tops/kimBlanco.jpg";
                     break;
                 case 4:
                     image.src = "Lemur/Tops/basicoTerra.jpg";
                     image2.src = "Lemur/Tops/competicionTerra.jpg";
                     image3.src = "Lemur/Tops/gretaTerra.jpg";
+                    image4.src = "Lemur/Tops/marilynTerra.jpg";
+                    image5.src = "Lemur/Tops/scarletTerra.jpg";
                     break;
                 case 5:
                     image.src = "Lemur/Tops/basicoRojo.jpg";
                     image2.src = "Lemur/Tops/competicionRojo.jpg";
                     image3.src = "Lemur/Tops/gretaRojo.jpg";
+                    image4.src = "Lemur/Tops/marilynRojo.jpg";
+                    image5.src = "Lemur/Tops/scarletRojo.jpg";
+                    image7.src = "Lemur/Tops/taylorRojo.jpg";
+                    image8.src = "Lemur/Tops/kimRojo.jpg";
                     break;
                 case 6:
                     image.src = "Lemur/Tops/basicoBlueMelange.jpg";
                     image2.src = "Lemur/Tops/competicionBlueMelange.jpg";
                     image3.src = "Lemur/Tops/gretaBlueMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynBlueMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletBlueMelange.jpg";
                     break;
                 case 7:
                     image.src = "Lemur/Tops/basicoMagentaMelange.jpg";
                     image2.src = "Lemur/Tops/competicionMagentaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaMagentaMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynMagentaMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletMagentaMelange.jpg";
                     break;
                 case 8:
                     image.src = "Lemur/Tops/basicoAquaMelange.jpg";
                     image2.src = "Lemur/Tops/competicionAquaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaAquaMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynAquaMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletAquaMelange.jpg";
                     break;
                 case 9:
                     image.src = "Lemur/Tops/basicoLavandaMelange.jpg";
                     image2.src = "Lemur/Tops/competicionLavandaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaLavandaMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynLavandaMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletLavandaMelange.jpg";
                     break;
                 case 10:
                     image.src = "Lemur/Tops/basicoRosaMelange.jpg";
                     image2.src = "Lemur/Tops/competicionRosaMelange.jpg";
                     image3.src = "Lemur/Tops/gretaRosaMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynRosaMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletRosaMelange.jpg";
                     break;
                 case 11:
                     image.src = "Lemur/Tops/basicoVerdeMilitar.jpg";
                     image2.src = "Lemur/Tops/competicionVerdeMilitar.jpg";
                     image3.src = "Lemur/Tops/gretaVerdeMilitar.jpg";
+                    image4.src = "Lemur/Tops/marilynVerdeMilitar.jpg";
+                    image5.src = "Lemur/Tops/scarletVerdeMilitar.jpg";
+                    image7.src = "Lemur/Tops/taylorVerdeMilitar.jpg";
+                    image8.src = "Lemur/Tops/kimVerdeMilitar.jpg";
                     break;
                 case 12:
                     image.src = "Lemur/Tops/basicoPetroleo.jpg";
                     image2.src = "Lemur/Tops/competicionPetroleo.jpg";
                     image3.src = "Lemur/Tops/gretaPetroleo.jpg";
+                    image4.src = "Lemur/Tops/marilynPetroleo.jpg";
+                    image5.src = "Lemur/Tops/scarletPetroleo.jpg";
+                    image6.src = "Lemur/Tops/Tipos/cleoPetroleo.jpg";
+                    
                     break;
                 case 13:
                     image.src = "Lemur/Tops/basicoRosaViejo.jpg";
                     image2.src = "Lemur/Tops/competicionRosaViejo.jpg";
                     image3.src = "Lemur/Tops/gretaRosaViejo.jpg";
+                    image4.src = "Lemur/Tops/marilynRosaViejo.jpg";
+                    image5.src = "Lemur/Tops/scarletRosaViejo.jpg";
+                    image7.src = "Lemur/Tops/taylorRosaViejo.jpg";
+                    image8.src = "Lemur/Tops/kimRosaViejo.jpg";
                     break;
                 case 14:
                     image.src = "Lemur/Tops/basicoBordoMelange.jpg";
                     image2.src = "Lemur/Tops/competicionBordoMelange.jpg";
                     image3.src = "Lemur/Tops/gretaBordoMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynBordoMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletBordoMelange.jpg";
+                    
                     break;
                 case 15:
                     image.src = "Lemur/Tops/basicoTurquesa.jpg";
                     image2.src = "Lemur/Tops/competicionTurquesa.jpg";
                     image3.src = "Lemur/Tops/gretaTurquesa.jpg";
+                    image4.src = "Lemur/Tops/marilynTurquesa.jpg";
+                    image5.src = "Lemur/Tops/scarletTurquesa.jpg";
                     break;
                 case 16:
                     image.src = "Lemur/Tops/basicoDurazno.jpg";
                     image2.src = "Lemur/Tops/competicionDurazno.jpg";
                     image3.src = "Lemur/Tops/gretaDurazno.jpg";
+                    image4.src = "Lemur/Tops/marilynDurazno.jpg";
+                    image5.src = "Lemur/Tops/scarletDurazno.jpg";
+                    image6.src = "Lemur/Tops/cleoDurazno.jpg";
                     break;
                 case 17:
                     image.src = "Lemur/Tops/basicoZanahoria.jpg";
                     image2.src = "Lemur/Tops/competicionZanahoria.jpg";
                     image3.src = "Lemur/Tops/gretaZanahoria.jpg";
+                    image4.src = "Lemur/Tops/marilynZanahoria.jpg";
+                    image5.src = "Lemur/Tops/scarletZanahoria.jpg";
+                    image7.src = "Lemur/Tops/taylorZanahoria.jpg";
+                    image8.src = "Lemur/Tops/kimZanahoria.jpg";
                     break;
                 case 18:
                     image.src = "Lemur/Tops/basicoVerdeBenetton.jpg";
                     image2.src = "Lemur/Tops/competicionVerdeBenetton.jpg";
                     image3.src = "Lemur/Tops/gretaVerdeBenetton.jpg";
+                    image4.src = "Lemur/Tops/marilynVerdeBenetton.jpg";
+                    image5.src = "Lemur/Tops/scarletVerdeBenetton.jpg";
+                    image7.src = "Lemur/Tops/taylorVerdeBenetton.jpg";
+                    image8.src = "Lemur/Tops/kimVerdeBenetton.jpg";
                     break;
                 case 19:
                     image.src = "Lemur/Tops/basicoVerdeIngles.jpg";
                     image2.src = "Lemur/Tops/competicionVerdeIngles.jpg";
                     image3.src = "Lemur/Tops/gretaVerdeIngles.jpg";
+                    image4.src = "Lemur/Tops/marilynVerdeIngles.jpg";
+                    image5.src = "Lemur/Tops/scarletVerdeIngles.jpg";
+                    image7.src = "Lemur/Tops/taylorVerdeIngles.jpg";
+                    image8.src = "Lemur/Tops/kimVerdeIngles.jpg";
                     break;
                 case 20:
                     image.src = "Lemur/Tops/basicoMorado.jpg";
                     image2.src = "Lemur/Tops/competicionMorado.jpg";
                     image3.src = "Lemur/Tops/gretaMorado.jpg";
+                    image4.src = "Lemur/Tops/marilynMorado.jpg";
+                    image5.src = "Lemur/Tops/scarletMorado.jpg";
+                    image8.src = "Lemur/Tops/kimMorado.jpg";
                     break;
                 case 21:
                     image.src = "Lemur/Tops/basicoPetroleoMelange.jpg";
                     image2.src = "Lemur/Tops/competicionPetroleoMelange.jpg";
                     image3.src = "Lemur/Tops/gretaPetroleoMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynPetroleoMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletPetroleoMelange.jpg";
+
                     break;
                 case 22:
                     image.src = "Lemur/Tops/basicoFucsia.jpg";
                     image2.src = "Lemur/Tops/competicionFucsia.jpg";
                     image3.src = "Lemur/Tops/gretaFucsia.jpg";
+                    image4.src = "Lemur/Tops/marilynFucsia.jpg";
+                    image5.src = "Lemur/Tops/scarletFucsia.jpg";
+                    image7.src = "Lemur/Tops/taylorFucsia.jpg";
+                    image8.src = "Lemur/Tops/kimFucsia.jpg";
                     break;
                 case 23:
                     image.src = "Lemur/Tops/basicoPlomoMelange.jpg";
                     image2.src = "Lemur/Tops/competicionPlomoMelange.jpg";
                     image3.src = "Lemur/Tops/gretaPlomoMelange.jpg";
+                    image4.src = "Lemur/Tops/marilynPlomoMelange.jpg";
+                    image5.src = "Lemur/Tops/scarletPlomoMelange.jpg";
+                    image8.src = "Lemur/Tops/kimPlomoMelange.jpg";
                     break;
                 case 24:
                     image.src = "Lemur/Tops/basicoMostaza.jpg";
                     image2.src = "Lemur/Tops/competicionMostaza.jpg";
                     image3.src = "Lemur/Tops/gretaMostaza.jpg";
+                    image4.src = "Lemur/Tops/marilynMostaza.jpg";
+                    image5.src = "Lemur/Tops/scarletMostaza.jpg";
+                    image6.src = "Lemur/Tops/cleoMostaza.jpg";
+                    image8.src = "Lemur/Tops/kimMostaza.jpg";
                     break;
                 case 25:
                     image.src = "Lemur/Tops/basicoChicle.jpg";
                     image2.src = "Lemur/Tops/competicionChicle.jpg";
                     image3.src = "Lemur/Tops/gretaChicle.jpg";
+                    image4.src = "Lemur/Tops/marilynChicle.jpg";
+                    image5.src = "Lemur/Tops/scarletChicle.jpg";
+                    image7.src = "Lemur/Tops/taylorChicle.jpg";
+                    image8.src = "Lemur/Tops/kimChicle.jpg";
                     break;
                 case 26:
                     image.src = "Lemur/Tops/basicoVerdeEsmeralda.jpg";
                     image2.src = "Lemur/Tops/competicionVerdeEsmeralda.jpg";
                     image3.src = "Lemur/Tops/gretaVerdeEsmeralda.jpg";
+                    image4.src = "Lemur/Tops/marilynVerdeEsmeralda.jpg";
+                    image5.src = "Lemur/Tops/scarletVerdeEsmeralda.jpg";
+
                     break;
                 case 27:
                     image.src = "Lemur/Tops/basicoAzulMarino.jpg";
-                    image2.src = "Lemur/Tops/competicionAzulMarino.jpg";
-                    image3.src = "Lemur/Tops/gretaAzulMarino.jpg";
+                    image4.src = "Lemur/Tops/marilynAzulMarino.jpg";
+
+                    
                     break;
                 case 28:
                     image.src = "Lemur/Tops/basicoCelestePastel.jpg";
                     image2.src = "Lemur/Tops/competicionCelestePastel.jpg";
                     image3.src = "Lemur/Tops/gretaCelestePastel.jpg";
+                    image4.src = "Lemur/Tops/marilynCelestePastel.jpg";
+                    image5.src = "Lemur/Tops/scarletCelestePastel.jpg";
+
                     break;
                 case 29:
                     image.src = "Lemur/Tops/basicoLilaPastel.jpg";
                     image2.src = "Lemur/Tops/competicionLilaPastel.jpg";
                     image3.src = "Lemur/Tops/gretaLilaPastel.jpg";
+                    image4.src = "Lemur/Tops/marilynLilaPastel.jpg";
+                    image5.src = "Lemur/Tops/scarletLilaPastel.jpg";
+
                     break;
                 case 30:
                     image.src = "Lemur/Tops/basicoAzulFrancia.jpg";
                     image2.src = "Lemur/Tops/competicionAzulFrancia.jpg";
                     image3.src = "Lemur/Tops/gretaAzulFrancia.jpg";
+                    image5.src = "Lemur/Tops/scarletAzulFrancia.jpg";
+                    image7.src = "Lemur/Tops/taylorAzulFrancia.jpg";
+
                     break;
                 case 31:
                     image.src = "Lemur/Tops/basicoVioleta.jpg";
-                    image2.src = "Lemur/Tops/competicionVioleta.jpg";
                     image3.src = "Lemur/Tops/gretaVioleta.jpg";
+                    image4.src = "Lemur/Tops/marilynVioleta.jpg";
+                    image5.src = "Lemur/Tops/scarletVioleta.jpg";
+                    image7.src = "Lemur/Tops/taylorVioleta.jpg";
+                    image8.src = "Lemur/Tops/kimVioleta.jpg";
                     break;
                 case 32:
                     image.src = "Lemur/Tops/basicoGrisPlomo.jpg";
-                    image2.src = "Lemur/Tops/competicionGrisPlomo.jpg";
                     image3.src = "Lemur/Tops/gretaGrisPlomo.jpg";
+                    image4.src = "Lemur/Tops/marilynGrisPlomo.jpg";
+                    image5.src = "Lemur/Tops/scarletGrisPlomo.jpg";
                     break;
 
             }
