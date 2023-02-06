@@ -279,7 +279,7 @@ button:hover, button a:hover {
   font-family: "Oswald", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  margin-top:450px;
+  margin-top: 50px;
   color: white;
 }
 
@@ -291,19 +291,16 @@ button:hover, button a:hover {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 20px;
-  margin-top: 200px;
+  margin-top: 200px;  
   margin-bottom: 10px;
   color: white;
 }
 
 .container-detalle {
-  width: 100;
-  height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 10px;
-  margin: 0;
 }
 
 .detalle {
@@ -787,7 +784,6 @@ footer .container .row .redes {
 
   main .title {
     font-size: 12px;
-    margin-top: 380px;
     margin-bottom: 0%;
     color: white;
   }
@@ -799,25 +795,22 @@ footer .container .row .redes {
     color: white;
   }
 
-  main .container-detalle {
-    width: 100%;
-    height: 200px;
-  }
 
   main .detalle {
     font-size: 8.5px;
-    margin-bottom: 0%;
+    margin: 2px;
   }
 
   main .container-detalle .card {
-    width: 70px;
-    height: 140px;
+    width: 90px;
+    height: 180px;
     margin-bottom: 6px;
   }
 
   main .container-detalle .card img {
     height: 70%;
   }
+
 
   .modelosTitulo {
     font-size: 15px;
@@ -828,7 +821,7 @@ footer .container .row .redes {
   .tiposTop .card {
     width: 100px;
     height: 100px;
-    margin: 2px;
+    
   }
 
   .tiposTop .card img {
@@ -840,9 +833,10 @@ footer .container .row .redes {
     align-items: center;
   }
 
+ 
 
   .tiposTop .detalle {
-    font-size: 9px;
+    font-size: 8px;
     margin-top: 0px;
   }
 
