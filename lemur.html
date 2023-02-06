@@ -498,7 +498,7 @@
         <div class="container-detalle">
 
             <div class="card">
-                <img id="top-manga-corta-estampa" src="Lemur/TopManga/topMangaMirage.png">
+                <img id="top-manga-corta-estampa" src="Lemur/TopManga/topMangaMirage.png" >
                 <ul class="detalle">
                     <li>Estampados</li>
                     <li>$3100</li>
@@ -770,93 +770,268 @@
         <div class="container-detalle">
 
             <div class="card">
-                <img src="Lemur/Bikers/bikerGolden.jpg" onmouseover="src=('Lemur/Bikers/bikerGolden2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerGolden.jpg')">
+                <img id="biker-estampa" src="Lemur/Bikers/bikerGolden.jpg">
                 <ul class="detalle">
-                    <li>Biker Golden</li>
+                    <li>Estampados</li>
                     <li>$2900</li>
                 </ul>
+                <div class="dropdown colores">
+                    <button class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Ver
+                        estampas <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-alba" style="background-image: url(Lemur/estampas/alba.png);"
+                                    title="Alba"></button></a></li>
+                        <!--     <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-aurora" style="background-image: url(Lemur/estampas/aurora.png);"
+                                    title="Aurora"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-caliope" style="background-image: url(Lemur/estampas/caliope.png);"
+                                    title="Caliope"></button></a>
+                        </li>-->
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-cayena" style="background-image: url(Lemur/estampas/cayena.png);"
+                                    title="Cayena"></button></a></li>
+                     <!--   <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-dark" style="background-image: url(Lemur/estampas/dark.png);"
+                                    title="Dark"></button></a></li>
+                    
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-bloom" style="background-image: url(Lemur/estampas/bloom.png);"
+                                    title="Bloom"></button></a></li>-->
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-eira" style="background-image: url(Lemur/estampas/eira.png);"
+                                    title="Eira"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-euphoria" style="background-image: url(Lemur/estampas/euphoria.png);"
+                                    title="Euphoria"></button></a></li>
+                          <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonEstampa"
+                                    id="button-biker-forestprint"
+                                    style="background-image: url(Lemur/estampas/forestprint.png);"
+                                    title="Forest Print"></button></a></li>
+                    
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-golden" style="background-image: url(Lemur/estampas/golden.png);"
+                                    title="Golden"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonEstampa"
+                                    id="button-biker-hanna" style="background-image: url(Lemur/estampas/hanna.png);"
+                                    title="Hanna"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-hiedra" style="background-image: url(Lemur/estampas/hiedra.png);"
+                                    title="Hiedra"></button></a></li>
+                           <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-iceprint" style="background-image: url(Lemur/estampas/iceprint.png);"
+                                    title="Ice Print"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-indiana" style="background-image: url(Lemur/estampas/indiana.png);"
+                                    title="Indiana"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-jane" style="background-image: url(Lemur/estampas/jane.png);"
+                                    title="Jane"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-kalesi" style="background-image: url(Lemur/estampas/kalesi.png);"
+                                    title="Kalesi"></button></a>
+                        </li>
+                   
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-kahlo" style="background-image: url(Lemur/estampas/kahlo.png);"
+                                    title="Kahlo"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-kitty" style="background-image: url(Lemur/estampas/kitty.png);"
+                                    title="Kitty"></button></a>
+                        </li>
+                       <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-limaprint" style="background-image: url(Lemur/estampas/limaprint.png);"
+                                    title="Lima Print"></button></a>
+                        </li>
+                  
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-love" style="background-image: url(Lemur/estampas/love.png);"
+                                    title="Love"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-mei" style="background-image: url(Lemur/estampas/mei.png);"
+                                    title="Mei"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-mirage" style="background-image: url(Lemur/estampas/mirage.png);"
+                                    title="Mirage"></button></a>
+                        </li>
+                        <!--  <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-paint" style="background-image: url(Lemur/estampas/paint.png);"
+                                    title="Paint"></button></a>
+                        </li>-->
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-paradise" style="background-image: url(Lemur/estampas/paradise.jpg);"
+                                    title="Paradise"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-phoenix" style="background-image: url(Lemur/estampas/phoenix.png);"
+                                    title="Phoenix"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-roseprint" style="background-image: url(Lemur/estampas/roseprint.png);"
+                                    title="Rose Print"></button></a>
+                        </li>
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-sansa" style="background-image: url(Lemur/estampas/sansa.png);"
+                                    title="Sansa"></button></a>
+                        </li>-->
+                       <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-snow" style="background-image: url(Lemur/estampas/snow.png);"
+                                    title="Snow"></button></a>
+                        </li>
+                    
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-splash" style="background-image: url(Lemur/estampas/splash.png);"
+                                    title="Splash"></button></a>
+                        </li>
+                        <!-- <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-storm" style="background-image: url(Lemur/estampas/storm.png);"
+                                    title="Storm"></button></a>
+                        </li>--> 
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-thai" style="background-image: url(Lemur/estampas/thai.png);"
+                                    title="Thai"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-tiffany" style="background-image: url(Lemur/estampas/tiffany.png);"
+                                    title="Tiffany"></button></a>
+                   </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-vader" style="background-image: url(Lemur/estampas/vader.png);"
+                                    title="Vader"></button></a>
+                        </li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonEstampa"
+                                    id="button-biker-wild" style="background-image: url(Lemur/estampas/wild.png);"
+                                    title="Wild"></button></a>
+                        </li>
+                      
+                    </ul>
+                </div>
             </div>
 
             <div class="card">
-                <img src="Lemur/Bikers/bikerFrizze.jpg" onmouseover="src=('Lemur/Bikers/bikerFrizze2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerFrizze.jpg')">
+                <img id="biker-color" src="Lemur/Bikers/bikerTerra.jpg">
                 <ul class="detalle">
-                    <li>Biker Frizze</li>
+                    <li>Lisos</li>
                     <li>$2900</li>
                 </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerInk.jpeg" onmouseover="src=('Lemur/Bikers/bikerInk2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerInk.jpeg')">
-                <ul class="detalle">
-                    <li>Biker Ink</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerMei.jpg" onmouseover="src=('Lemur/Bikers/bikerMei2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerMei.jpg')">
-                <ul class="detalle">
-                    <li>Biker Mei</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerWild.jpg" onmouseover="src=('Lemur/Bikers/bikerWild2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerWild.jpg')">
-                <ul class="detalle">
-                    <li>Biker Wild</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerKalesi.jpg" onmouseover="src=('Lemur/Bikers/bikerKalesi2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerKalesi.jpg')">
-                <ul class="detalle">
-                    <li>Biker Kalesi</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerCeleste.jpg" onmouseover="src=('Lemur/Bikers/bikerCeleste2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerCeleste.jpg')">
-                <ul class="detalle">
-                    <li>Biker Celeste Pastel</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerEsmeralda.jpg" onmouseover="src=('Lemur/Bikers/bikerEsmeralda2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerEsmeralda.jpg')">
-                <ul class="detalle">
-                    <li>Biker Esmeralda</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerGris.jpg" onmouseover="src=('Lemur/Bikers/bikerGris2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerGris.jpg')">
-                <ul class="detalle">
-                    <li>Biker Gris Melange</li>
-                    <li>$2900</li>
-                </ul>
-            </div>
-
-            <div class="card">
-                <img src="Lemur/Bikers/bikerTerra.jpg" onmouseover="src=('Lemur/Bikers/bikerTerra2.jpg')"
-                    onmouseout="src=('Lemur/Bikers/bikerTerra.jpg')">
-                <ul class="detalle">
-                    <li>Biker Terra</li>
-                    <li>$2900</li>
-                </ul>
+                <div class="dropdown colores">
+                    <button class="btn-xs btn-dark dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Ver
+                        Colores
+                        <span class="caret"></span></button>
+                    <ul class="dropdown-menu" role="menu">
+                       <!-- <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-topmanga-negro" style="background-color:#000; border-color: white;"
+                                    title="Negro"></button></a></li>-->
+                       <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-grismelange" style="background-color:#818080;"
+                                    title="Gris Melange"></button></a></li>
+                        <!--<li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-blanco" style="background-color:#fff;" title="Blanco"></button></a></li>
+                        --> <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-terra" style="background-color:#a15c2e;" title="Terra"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-rojo" style="background-color:#e0343f;" title="Rojo"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-bluemelange" style="background-color:#8ba7f5;"
+                                    title="Blue Melange"></button></a></li>
+                     
+                        <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonColor"
+                                    id="button-biker-magentamelange" style="background-color:#c96273;"
+                                    title="Magenta Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-aquamelange" style="background-color:#89e1e4;"
+                                    title="Aqua Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"> <button class="botonColor"
+                                    id="button-biker-lavandamelange" style="background-color:#cdacf8;"
+                                    title="Lavanda Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-rosamelange" style="background-color:#f37ed6;"
+                                    title="Rosa Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-verdemilitar" style="background-color:#527208;"
+                                    title="Verde Militar"></button></a></li>
+                       
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-petroleo" style="background-color:#225677;"
+                                    title="Petroleo"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-rosaviejo" style="background-color:#eca5c9;"
+                                    title="Rosa Viejo"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-bordomelange" style="background-color:#571d2e;"
+                                    title="Bordo Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-turquesa" style="background-color:#80d2f8;"
+                                    title="Turquesa"></button></a>
+                        </li>
+                         <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-durazno" style="background-color:#ee896a;" title="Durazno"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-zanahoria" style="background-color:#fd7c31;"
+                                    title="Zanahoria"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-verdebenetton" style="background-color:#3eb34d;"
+                                    title="Verde Benetton"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-verdeingles" style="background-color:#305a4e;"
+                                    title="Verde Inglés"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-morado" style="background-color:#b95c94;" title="Morado"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-petroleomelange" style="background-color:#355d75;"
+                                    title="Petroleo Melange"></button></a></li>
+                       <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-fucsia" style="background-color:#eb3972;" title="Fucsia"></button></a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-plomomelange" style="background-color:#494949;"
+                                    title="Plomo Melange"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-mostaza" style="background-color:#e4ba47;" title="Mostaza"></button></a>
+                        </li>
+                       <!-- <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-chicle" style="background-color:#f76ea2;" title="Chicle"></button></a>
+                        </li>-->
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-verdeesmeralda" style="background-color:#2fdabd;"
+                                    title="Verde Esmeralda"></button></a></li>
+                       
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-azulmarino" style="background-color:#253e91;"
+                                    title="Azul Marino"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-celestepastel" style="background-color:#87b7d8;"
+                                    title="Celeste Pastel"></button></a></li>
+                       <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-lilapastel" style="background-color:#c6a2d4;"
+                                    title="Lila Pastel"></button></a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-azulfrancia" style="background-color:#095cec;"
+                                    title="Azul Francia"></button></a></li>
+                        
+                        <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-violeta" style="background-color:#6a2592;"
+                                    title="Violeta"></button></a>
+                        </li>
+                         <li role="presentation"><a role="menuitem" tabindex="-1"><button class="botonColor"
+                                    id="button-biker-grisplomo" style="background-color:#5d5e5f;"
+                                    title="Gris Plomo"></button></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
 
@@ -1297,617 +1472,7 @@
     </footer>
 
 
-    <!--CAMBIAR COLORES EN PRENDAS-->
-    <!--faltan: 
-        
-    Competicion GRIS PLOMO - VIOLETA - AZUL MARINO 
 
-    Greta AZUL MARINO 
-
-    Marilyn AZUL FRANCIA
-
-    Scarlet AZUL MARINO
-
-    Cleo TODOS MENOS DURAZNO - PETROLEO - MOSTAZA
-
-    Taylor TODOS MENOS NEGRO - BLANCO - ROJO - ROSA VIEJO - AZUL FRANCIA - 
-    VERDE MILITAR - VERDE BENETTON - VERDE INGLES - FUCSIA - CHICLE - VIOLETA
-
-    Kim muchos
-     -->
-    <script>
-
-        //COLORES TOPS
-
-        const image = document.querySelector("#basico");
-        const image2 = document.querySelector("#competicion");
-        const image3 = document.querySelector("#greta");
-        const image4 = document.querySelector("#marilyn");
-        const image5 = document.querySelector("#scarlet");
-        const image6 = document.querySelector("#cleo");
-        const image7 = document.querySelector("#taylor");
-        const image8 = document.querySelector("#kim");
-
-        function changeImage(color) {
-            switch (color) {
-                case 1:
-                    image.src = "Lemur/Tops/Tipos/tipoBasico.jpg";
-                    image2.src = "Lemur/Tops/Tipos/tipoCompeticion.jpg";
-                    image3.src = "Lemur/Tops/Tipos/tipoGreta.jpg";
-                    image4.src = "Lemur/Tops/Tipos/tipoMarilyn.jpg";
-                    image5.src = "Lemur/Tops/Tipos/tipoScarlet.jpg";
-                    image7.src = "Lemur/Tops/Tipos/tipoTaylor.jpg";
-                    image8.src = "Lemur/Tops/Tipos/tipoKim.jpg";
-                    break;
-                case 2:
-                    image.src = "Lemur/Tops/basicoGrisMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionGrisMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaGrisMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynGrisMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletGrisMelange.jpg";
-
-                    break;
-                case 3:
-                    image.src = "Lemur/Tops/basicoBlanco.jpg";
-                    image2.src = "Lemur/Tops/competicionBlanco.jpg";
-                    image3.src = "Lemur/Tops/gretaBlanco.jpg";
-                    image4.src = "Lemur/Tops/marilynBlanco.jpg";
-                    image5.src = "Lemur/Tops/scarletBlanco.jpg";
-                    image7.src = "Lemur/Tops/taylorBlanco.jpg";
-                    image8.src = "Lemur/Tops/kimBlanco.jpg";
-                    break;
-                case 4:
-                    image.src = "Lemur/Tops/basicoTerra.jpg";
-                    image2.src = "Lemur/Tops/competicionTerra.jpg";
-                    image3.src = "Lemur/Tops/gretaTerra.jpg";
-                    image4.src = "Lemur/Tops/marilynTerra.jpg";
-                    image5.src = "Lemur/Tops/scarletTerra.jpg";
-                    break;
-                case 5:
-                    image.src = "Lemur/Tops/basicoRojo.jpg";
-                    image2.src = "Lemur/Tops/competicionRojo.jpg";
-                    image3.src = "Lemur/Tops/gretaRojo.jpg";
-                    image4.src = "Lemur/Tops/marilynRojo.jpg";
-                    image5.src = "Lemur/Tops/scarletRojo.jpg";
-                    image7.src = "Lemur/Tops/taylorRojo.jpg";
-                    image8.src = "Lemur/Tops/kimRojo.jpg";
-                    break;
-                case 6:
-                    image.src = "Lemur/Tops/basicoBlueMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionBlueMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaBlueMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynBlueMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletBlueMelange.jpg";
-                    break;
-                case 7:
-                    image.src = "Lemur/Tops/basicoMagentaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionMagentaMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaMagentaMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynMagentaMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletMagentaMelange.jpg";
-                    break;
-                case 8:
-                    image.src = "Lemur/Tops/basicoAquaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionAquaMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaAquaMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynAquaMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletAquaMelange.jpg";
-                    break;
-                case 9:
-                    image.src = "Lemur/Tops/basicoLavandaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionLavandaMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaLavandaMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynLavandaMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletLavandaMelange.jpg";
-                    break;
-                case 10:
-                    image.src = "Lemur/Tops/basicoRosaMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionRosaMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaRosaMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynRosaMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletRosaMelange.jpg";
-                    break;
-                case 11:
-                    image.src = "Lemur/Tops/basicoVerdeMilitar.jpg";
-                    image2.src = "Lemur/Tops/competicionVerdeMilitar.jpg";
-                    image3.src = "Lemur/Tops/gretaVerdeMilitar.jpg";
-                    image4.src = "Lemur/Tops/marilynVerdeMilitar.jpg";
-                    image5.src = "Lemur/Tops/scarletVerdeMilitar.jpg";
-                    image7.src = "Lemur/Tops/taylorVerdeMilitar.jpg";
-                    image8.src = "Lemur/Tops/kimVerdeMilitar.jpg";
-                    break;
-                case 12:
-                    image.src = "Lemur/Tops/basicoPetroleo.jpg";
-                    image2.src = "Lemur/Tops/competicionPetroleo.jpg";
-                    image3.src = "Lemur/Tops/gretaPetroleo.jpg";
-                    image4.src = "Lemur/Tops/marilynPetroleo.jpg";
-                    image5.src = "Lemur/Tops/scarletPetroleo.jpg";
-                    image6.src = "Lemur/Tops/Tipos/cleoPetroleo.jpg";
-
-                    break;
-                case 13:
-                    image.src = "Lemur/Tops/basicoRosaViejo.jpg";
-                    image2.src = "Lemur/Tops/competicionRosaViejo.jpg";
-                    image3.src = "Lemur/Tops/gretaRosaViejo.jpg";
-                    image4.src = "Lemur/Tops/marilynRosaViejo.jpg";
-                    image5.src = "Lemur/Tops/scarletRosaViejo.jpg";
-                    image7.src = "Lemur/Tops/taylorRosaViejo.jpg";
-                    image8.src = "Lemur/Tops/kimRosaViejo.jpg";
-                    break;
-                case 14:
-                    image.src = "Lemur/Tops/basicoBordoMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionBordoMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaBordoMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynBordoMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletBordoMelange.jpg";
-
-                    break;
-                case 15:
-                    image.src = "Lemur/Tops/basicoTurquesa.jpg";
-                    image2.src = "Lemur/Tops/competicionTurquesa.jpg";
-                    image3.src = "Lemur/Tops/gretaTurquesa.jpg";
-                    image4.src = "Lemur/Tops/marilynTurquesa.jpg";
-                    image5.src = "Lemur/Tops/scarletTurquesa.jpg";
-                    break;
-                case 16:
-                    image.src = "Lemur/Tops/basicoDurazno.jpg";
-                    image2.src = "Lemur/Tops/competicionDurazno.jpg";
-                    image3.src = "Lemur/Tops/gretaDurazno.jpg";
-                    image4.src = "Lemur/Tops/marilynDurazno.jpg";
-                    image5.src = "Lemur/Tops/scarletDurazno.jpg";
-                    image6.src = "Lemur/Tops/cleoDurazno.jpg";
-                    break;
-                case 17:
-                    image.src = "Lemur/Tops/basicoZanahoria.jpg";
-                    image2.src = "Lemur/Tops/competicionZanahoria.jpg";
-                    image3.src = "Lemur/Tops/gretaZanahoria.jpg";
-                    image4.src = "Lemur/Tops/marilynZanahoria.jpg";
-                    image5.src = "Lemur/Tops/scarletZanahoria.jpg";
-                    image7.src = "Lemur/Tops/taylorZanahoria.jpg";
-                    image8.src = "Lemur/Tops/kimZanahoria.jpg";
-                    break;
-                case 18:
-                    image.src = "Lemur/Tops/basicoVerdeBenetton.jpg";
-                    image2.src = "Lemur/Tops/competicionVerdeBenetton.jpg";
-                    image3.src = "Lemur/Tops/gretaVerdeBenetton.jpg";
-                    image4.src = "Lemur/Tops/marilynVerdeBenetton.jpg";
-                    image5.src = "Lemur/Tops/scarletVerdeBenetton.jpg";
-                    image7.src = "Lemur/Tops/taylorVerdeBenetton.jpg";
-                    image8.src = "Lemur/Tops/kimVerdeBenetton.jpg";
-                    break;
-                case 19:
-                    image.src = "Lemur/Tops/basicoVerdeIngles.jpg";
-                    image2.src = "Lemur/Tops/competicionVerdeIngles.jpg";
-                    image3.src = "Lemur/Tops/gretaVerdeIngles.jpg";
-                    image4.src = "Lemur/Tops/marilynVerdeIngles.jpg";
-                    image5.src = "Lemur/Tops/scarletVerdeIngles.jpg";
-                    image7.src = "Lemur/Tops/taylorVerdeIngles.jpg";
-                    image8.src = "Lemur/Tops/kimVerdeIngles.jpg";
-                    break;
-                case 20:
-                    image.src = "Lemur/Tops/basicoMorado.jpg";
-                    image2.src = "Lemur/Tops/competicionMorado.jpg";
-                    image3.src = "Lemur/Tops/gretaMorado.jpg";
-                    image4.src = "Lemur/Tops/marilynMorado.jpg";
-                    image5.src = "Lemur/Tops/scarletMorado.jpg";
-                    image8.src = "Lemur/Tops/kimMorado.jpg";
-                    break;
-                case 21:
-                    image.src = "Lemur/Tops/basicoPetroleoMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionPetroleoMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaPetroleoMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynPetroleoMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletPetroleoMelange.jpg";
-
-                    break;
-                case 22:
-                    image.src = "Lemur/Tops/basicoFucsia.jpg";
-                    image2.src = "Lemur/Tops/competicionFucsia.jpg";
-                    image3.src = "Lemur/Tops/gretaFucsia.jpg";
-                    image4.src = "Lemur/Tops/marilynFucsia.jpg";
-                    image5.src = "Lemur/Tops/scarletFucsia.jpg";
-                    image7.src = "Lemur/Tops/taylorFucsia.jpg";
-                    image8.src = "Lemur/Tops/kimFucsia.jpg";
-                    break;
-                case 23:
-                    image.src = "Lemur/Tops/basicoPlomoMelange.jpg";
-                    image2.src = "Lemur/Tops/competicionPlomoMelange.jpg";
-                    image3.src = "Lemur/Tops/gretaPlomoMelange.jpg";
-                    image4.src = "Lemur/Tops/marilynPlomoMelange.jpg";
-                    image5.src = "Lemur/Tops/scarletPlomoMelange.jpg";
-                    image8.src = "Lemur/Tops/kimPlomoMelange.jpg";
-                    break;
-                case 24:
-                    image.src = "Lemur/Tops/basicoMostaza.jpg";
-                    image2.src = "Lemur/Tops/competicionMostaza.jpg";
-                    image3.src = "Lemur/Tops/gretaMostaza.jpg";
-                    image4.src = "Lemur/Tops/marilynMostaza.jpg";
-                    image5.src = "Lemur/Tops/scarletMostaza.jpg";
-                    image6.src = "Lemur/Tops/cleoMostaza.jpg";
-                    image8.src = "Lemur/Tops/kimMostaza.jpg";
-                    break;
-                case 25:
-                    image.src = "Lemur/Tops/basicoChicle.jpg";
-                    image2.src = "Lemur/Tops/competicionChicle.jpg";
-                    image3.src = "Lemur/Tops/gretaChicle.jpg";
-                    image4.src = "Lemur/Tops/marilynChicle.jpg";
-                    image5.src = "Lemur/Tops/scarletChicle.jpg";
-                    image7.src = "Lemur/Tops/taylorChicle.jpg";
-                    image8.src = "Lemur/Tops/kimChicle.jpg";
-                    break;
-                case 26:
-                    image.src = "Lemur/Tops/basicoVerdeEsmeralda.jpg";
-                    image2.src = "Lemur/Tops/competicionVerdeEsmeralda.jpg";
-                    image3.src = "Lemur/Tops/gretaVerdeEsmeralda.jpg";
-                    image4.src = "Lemur/Tops/marilynVerdeEsmeralda.jpg";
-                    image5.src = "Lemur/Tops/scarletVerdeEsmeralda.jpg";
-
-                    break;
-                case 27:
-                    image.src = "Lemur/Tops/basicoAzulMarino.jpg";
-                    image4.src = "Lemur/Tops/marilynAzulMarino.jpg";
-                    break;
-                case 28:
-                    image.src = "Lemur/Tops/basicoCelestePastel.jpg";
-                    image2.src = "Lemur/Tops/competicionCelestePastel.jpg";
-                    image3.src = "Lemur/Tops/gretaCelestePastel.jpg";
-                    image4.src = "Lemur/Tops/marilynCelestePastel.jpg";
-                    image5.src = "Lemur/Tops/scarletCelestePastel.jpg";
-
-                    break;
-                case 29:
-                    image.src = "Lemur/Tops/basicoLilaPastel.jpg";
-                    image2.src = "Lemur/Tops/competicionLilaPastel.jpg";
-                    image3.src = "Lemur/Tops/gretaLilaPastel.jpg";
-                    image4.src = "Lemur/Tops/marilynLilaPastel.jpg";
-                    image5.src = "Lemur/Tops/scarletLilaPastel.jpg";
-
-                    break;
-                case 30:
-                    image.src = "Lemur/Tops/basicoAzulFrancia.jpg";
-                    image2.src = "Lemur/Tops/competicionAzulFrancia.jpg";
-                    image3.src = "Lemur/Tops/gretaAzulFrancia.jpg";
-                    image5.src = "Lemur/Tops/scarletAzulFrancia.jpg";
-                    image7.src = "Lemur/Tops/taylorAzulFrancia.jpg";
-
-                    break;
-                case 31:
-                    image.src = "Lemur/Tops/basicoVioleta.jpg";
-                    image3.src = "Lemur/Tops/gretaVioleta.jpg";
-                    image4.src = "Lemur/Tops/marilynVioleta.jpg";
-                    image5.src = "Lemur/Tops/scarletVioleta.jpg";
-                    image7.src = "Lemur/Tops/taylorVioleta.jpg";
-                    image8.src = "Lemur/Tops/kimVioleta.jpg";
-                    break;
-                case 32:
-                    image.src = "Lemur/Tops/basicoGrisPlomo.jpg";
-                    image3.src = "Lemur/Tops/gretaGrisPlomo.jpg";
-                    image4.src = "Lemur/Tops/marilynGrisPlomo.jpg";
-                    image5.src = "Lemur/Tops/scarletGrisPlomo.jpg";
-                    break;
-            }
-        }
-
-        const button1 = document.querySelector("#button-negro");
-        const button2 = document.querySelector("#button-grismelange");
-        const button3 = document.querySelector("#button-blanco");
-        const button4 = document.querySelector("#button-terra");
-        const button5 = document.querySelector("#button-rojo");
-        const button6 = document.querySelector("#button-bluemelange");
-        const button7 = document.querySelector("#button-magentamelange");
-        const button8 = document.querySelector("#button-aquamelange");
-        const button9 = document.querySelector("#button-lavandamelange");
-        const button10 = document.querySelector("#button-rosamelange");
-        const button11 = document.querySelector("#button-verdemilitar");
-        const button12 = document.querySelector("#button-petroleo");
-        const button13 = document.querySelector("#button-rosaviejo");
-        const button14 = document.querySelector("#button-bordomelange");
-        const button15 = document.querySelector("#button-turquesa");
-        const button16 = document.querySelector("#button-durazno");
-        const button17 = document.querySelector("#button-zanahoria");
-        const button18 = document.querySelector("#button-verdebenetton");
-        const button19 = document.querySelector("#button-verdeingles");
-        const button20 = document.querySelector("#button-morado");
-        const button21 = document.querySelector("#button-petroleomelange");
-        const button22 = document.querySelector("#button-fucsia");
-        const button23 = document.querySelector("#button-plomomelange");
-        const button24 = document.querySelector("#button-mostaza");
-        const button25 = document.querySelector("#button-chicle");
-        const button26 = document.querySelector("#button-verdeesmeralda");
-        const button27 = document.querySelector("#button-azulmarino");
-        const button28 = document.querySelector("#button-celestepastel");
-        const button29 = document.querySelector("#button-lilapastel");
-        const button30 = document.querySelector("#button-azulfrancia");
-        const button31 = document.querySelector("#button-violeta");
-        const button32 = document.querySelector("#button-grisplomo");
-
-
-
-        button1.onclick = function () {
-            changeImage(1);
-        };
-
-        button2.onclick = function () {
-            changeImage(2);
-        };
-
-        button3.onclick = function () {
-            changeImage(3);
-        }
-
-        button4.onclick = function () {
-            changeImage(4);
-        }
-
-        button5.onclick = function () {
-            changeImage(5);
-        }
-
-        button6.onclick = function () {
-            changeImage(6);
-        }
-
-        button7.onclick = function () {
-            changeImage(7);
-        }
-
-        button8.onclick = function () {
-            changeImage(8);
-        }
-
-        button9.onclick = function () {
-            changeImage(9);
-        }
-
-
-        button10.onclick = function () {
-            changeImage(10);
-        }
-
-        button11.onclick = function () {
-            changeImage(11);
-        }
-
-        button12.onclick = function () {
-            changeImage(12);
-        }
-
-        button13.onclick = function () {
-            changeImage(13);
-        }
-
-        button14.onclick = function () {
-            changeImage(14);
-        }
-        button15.onclick = function () {
-            changeImage(15);
-        }
-        button16.onclick = function () {
-            changeImage(16);
-        }
-        button17.onclick = function () {
-            changeImage(17);
-        }
-        button18.onclick = function () {
-            changeImage(18);
-        }
-        button19.onclick = function () {
-            changeImage(19);
-        }
-        button20.onclick = function () {
-            changeImage(20);
-        }
-        button21.onclick = function () {
-            changeImage(21);
-        }
-
-        button22.onclick = function () {
-            changeImage(22);
-        }
-        button23.onclick = function () {
-            changeImage(23);
-        }
-        button24.onclick = function () {
-            changeImage(24);
-        }
-        button25.onclick = function () {
-            changeImage(25);
-        }
-        button26.onclick = function () {
-            changeImage(26);
-        }
-        button27.onclick = function () {
-            changeImage(27);
-        }
-
-        button28.onclick = function () {
-            changeImage(28);
-        }
-        button29.onclick = function () {
-            changeImage(29);
-        }
-        button30.onclick = function () {
-            changeImage(30);
-        }
-        button31.onclick = function () {
-            changeImage(31);
-        }
-        button32.onclick = function () {
-            changeImage(32);
-        }
-
-        // TOPS MANGA CORTA
-
-        const image10 = document.querySelector("#top-manga-corta-estampa");
-
-        function changeImageEstampa(estampa) {
-            switch (estampa) {
-                case 33:
-                    image10.src = "Lemur/TopManga/topMangaAlba.jpg";
-                    break;
-                case 34:
-                    image10.src = "Lemur/TopManga/topMangaBloom.jpg";
-
-                    break;
-                case 35:
-                    image10.src = "Lemur/TopManga/topMangaEira.jpg";
-                    break;
-                case 36:
-                    image10.src = "Lemur/TopManga/topMangaEuphoria.jpg";
-                    break;
-                case 37:
-                    image10.src = "Lemur/TopManga/topMangaGolden.jpg";
-                    break;
-                case 38:
-                    image10.src = "Lemur/TopManga/topMangaHanna.jpg";
-                    break;
-                case 39:
-                    image10.src = "Lemur/TopManga/topMangaHiedra.jpg";
-                    break;
-                case 40:
-                    image10.src = "Lemur/TopManga/topMangaKahlo.jpg";
-                    break;
-                case 41:
-                    image10.src = "Lemur/TopManga/topMangaKitty.jpg";
-                    break;
-                case 42:
-                    image10.src = "Lemur/TopManga/topMangaLove.jpg";
-                    break;
-                case 43:
-                    image10.src = "Lemur/TopManga/topMangaMei.jpg";
-                    break;
-                case 44:
-                    image10.src = "Lemur/TopManga/topMangaMirage.png";
-                    break;
-                case 45:
-                    image10.src = "Lemur/TopManga/topMangaSplash.jpg";
-                    break;
-                case 46:
-                    image10.src = "Lemur/TopManga/topMangaVader.jpg";
-                    break;
-            }
-        }
-
-        const button33 = document.querySelector("#button-alba");
-        const button34 = document.querySelector("#button-bloom");
-        const button35 = document.querySelector("#button-eira");
-        const button36 = document.querySelector("#button-euphoria");
-        const button37 = document.querySelector("#button-golden");
-        const button38 = document.querySelector("#button-hanna");
-        const button39 = document.querySelector("#button-hiedra");
-        const button40 = document.querySelector("#button-kahlo");
-        const button41 = document.querySelector("#button-kitty");
-        const button42 = document.querySelector("#button-love");
-        const button43 = document.querySelector("#button-mei");
-        const button44 = document.querySelector("#button-mirage");
-        const button45 = document.querySelector("#button-splash");
-        const button46 = document.querySelector("#button-vader");
-
-
-        button33.onclick = function () {
-            changeImageEstampa(33);
-        }
-        button34.onclick = function () {
-            changeImageEstampa(34);
-        }
-        button35.onclick = function () {
-            changeImageEstampa(35);
-        }
-        button36.onclick = function () {
-            changeImageEstampa(36);
-        }
-        button37.onclick = function () {
-            changeImageEstampa(37);
-        }
-        button38.onclick = function () {
-            changeImageEstampa(38);
-        }
-        button39.onclick = function () {
-            changeImageEstampa(39);
-        }
-        button40.onclick = function () {
-            changeImageEstampa(40);
-        }
-        button41.onclick = function () {
-            changeImageEstampa(41);
-        }
-        button42.onclick = function () {
-            changeImageEstampa(42);
-        }
-        button43.onclick = function () {
-            changeImageEstampa(43);
-        }
-        button44.onclick = function () {
-            changeImageEstampa(44);
-        }
-        button45.onclick = function () {
-            changeImageEstampa(45);
-        }
-        button46.onclick = function () {
-            changeImageEstampa(46);
-        }
-
-        const image9 = document.querySelector("#top-manga-corta-color");
-
-        function changeImageTM(image) {
-            $(image9).attr("src", image);
-        }
-
-        const button47 = document.querySelector("#button-topmanga-negro");
-        const button48 = document.querySelector("#button-topmanga-magentamelange");
-        const button49 = document.querySelector("#button-topmanga-petroleo");
-        const button50 = document.querySelector("#button-topmanga-bordomelange");
-        const button51 = document.querySelector("#button-topmanga-turquesa");
-        const button52 = document.querySelector("#button-topmanga-verdebenetton");
-        const button53 = document.querySelector("#button-topmanga-verdeingles");
-        const button54 = document.querySelector("#button-topmanga-morado");
-        const button55 = document.querySelector("#button-topmanga-petroleomelange");
-        const button56 = document.querySelector("#button-topmanga-plomomelange");
-        const button57 = document.querySelector("#button-topmanga-azulmarino");
-        const button58 = document.querySelector("#button-topmanga-violeta");
-
-
-        button47.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaBlack.jpg");
-        }
-        button48.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaMagentaMelange.jpg");
-        }
-        button49.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaPetroleo.jpg");
-        }
-        button50.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaBordoMelange.jpg");
-        }
-        button51.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaTurquesa.jpg");
-        }
-        button52.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaVerdeBenetton.jpg");
-        }
-        button53.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaVerdeIngles.jpg");
-        }
-        button54.onclick = function () {
-            changeImageTM("Lemur/TopManga/TopMangaMorado.png");
-        }
-        button55.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaPetroleoMelange.jpg");
-        }
-        button56.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaPlomoMelange.jpg");
-        }
-        button57.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaAzulMarino.jpg");
-        }
-        button58.onclick = function () {
-            changeImageTM("Lemur/TopManga/topMangaVioleta.jpg");
-        }
-
-
-
-
-    </script>
     <script src="app.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
