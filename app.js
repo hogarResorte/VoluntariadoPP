@@ -851,6 +851,8 @@ button114.onclick = function () {
 }
 
 
+// SHORTS
+
 const image13 = document.querySelector("#short-color");
 const image14 = document.querySelector("#short-estampa");
 
@@ -904,22 +906,21 @@ const button151 = document.querySelector("#button-short-hiedra");
 const button152 = document.querySelector("#button-short-iceprint");
 const button153 = document.querySelector("#button-short-indiana");
 const button154 = document.querySelector("#button-short-jane");
-const button155 = document.querySelector("#button-short-kalesi");
-const button156 = document.querySelector("#button-short-kahlo");
-const button157 = document.querySelector("#button-short-kitty");
-const button158 = document.querySelector("#button-short-limaprint");
-const button159 = document.querySelector("#button-short-love");
-const button160 = document.querySelector("#button-short-mei");
-const button161 = document.querySelector("#button-short-mirage");
-const button162 = document.querySelector("#button-short-paradise");
-const button163 = document.querySelector("#button-short-phoenix");
-const button164 = document.querySelector("#button-short-roseprint");
-const button165 = document.querySelector("#button-short-snow");
-const button166 = document.querySelector("#button-short-splash");
-const button167 = document.querySelector("#button-short-thai");
-const button168 = document.querySelector("#button-short-tiffany");
-const button169 = document.querySelector("#button-short-vader");
-const button170 = document.querySelector("#button-short-wild");
+const button155 = document.querySelector("#button-short-kahlo");
+const button156 = document.querySelector("#button-short-kitty");
+const button157 = document.querySelector("#button-short-limaprint");
+const button158 = document.querySelector("#button-short-love");
+const button159 = document.querySelector("#button-short-mei");
+const button160 = document.querySelector("#button-short-mirage");
+const button161 = document.querySelector("#button-short-paradise");
+const button162 = document.querySelector("#button-short-phoenix");
+const button163 = document.querySelector("#button-short-roseprint");
+const button164 = document.querySelector("#button-short-snow");
+const button165 = document.querySelector("#button-short-splash");
+const button166 = document.querySelector("#button-short-thai");
+const button167 = document.querySelector("#button-short-tiffany");
+const button168 = document.querySelector("#button-short-vader");
+const button169 = document.querySelector("#button-short-wild");
 
 
 button115.onclick = function () {
@@ -1045,52 +1046,292 @@ button154.onclick = function () {
     changeImageSE("Lemur/Shorts/shortJane.jpg");
 }
 button155.onclick = function () {
-    changeImageSE("Lemur/Shorts/shortKalesi.jpg");
-}
-button156.onclick = function () {
     changeImageSE("Lemur/Shorts/shortKahlo.jpg");
 }
-button157.onclick = function () {
+button156.onclick = function () {
     changeImageSE("Lemur/Shorts/shortKitty.jpg");
 }
-button158.onclick = function () {
+button157.onclick = function () {
     changeImageSE("Lemur/Shorts/shortLimaPrint.jpg");
 }
-button159.onclick = function () {
+button158.onclick = function () {
     changeImageSE("Lemur/Shorts/shortLove.jpg");
 }
-button160.onclick = function () {
+button159.onclick = function () {
     changeImageSE("Lemur/Shorts/shortMei.jpg");
 }
-button161.onclick = function () {
+button160.onclick = function () {
     changeImageSE("Lemur/Shorts/shortMirage.jpg");
 }
-button162.onclick = function () {
+button161.onclick = function () {
     changeImageSE("Lemur/Shorts/shortParadise.jpg");
 }
-button163.onclick = function () {
+button162.onclick = function () {
     changeImageSE("Lemur/Shorts/shortPhoenix.jpg");
 }
-button164.onclick = function () {
+button163.onclick = function () {
     changeImageSE("Lemur/Shorts/shortRosePrint.jpg");
 }
-button165.onclick = function () {
+button164.onclick = function () {
     changeImageSE("Lemur/Shorts/shortSnow.jpg");
 }
-button166.onclick = function () {
+button165.onclick = function () {
     changeImageSE("Lemur/Shorts/shortSplash.jpg");
 }
-button167.onclick = function () {
+button166.onclick = function () {
     changeImageSE("Lemur/Shorts/shortThai.jpg");
 }
-button168.onclick = function () {
+button167.onclick = function () {
     changeImageSE("Lemur/Shorts/shortTiffany.jpg");
 }
-button169.onclick = function () {
+button168.onclick = function () {
     changeImageSE("Lemur/Shorts/shortVader.jpg");
 }
-button170.onclick = function () {
+button169.onclick = function () {
     changeImageSE("Lemur/Shorts/shortWild.jpg");
 }
+
+
+//CALZAS
+
+const image15 = document.querySelector("#calza-color");
+const image16 = document.querySelector("#calza-estampa");
+
+function changeImageCC(image) {
+  $(image15).attr("src", image);
+}
+
+function changeImageCE(image) {
+  $(image16).attr("src", image);
+}
+
+const button170 = document.querySelector("#button-calza-negro");
+const button171 = document.querySelector("#button-calza-grismelange");
+const button172 = document.querySelector("#button-calza-terra");
+const button173 = document.querySelector("#button-calza-rojo");
+const button174 = document.querySelector("#button-calza-magentamelange");
+const button175 = document.querySelector("#button-calza-aquamelange");
+const button176 = document.querySelector("#button-calza-lavandamelange");
+const button177 = document.querySelector("#button-calza-rosamelange");
+const button178 = document.querySelector("#button-calza-verdemilitar");
+const button179 = document.querySelector("#button-calza-petroleo");
+const button180 = document.querySelector("#button-calza-rosaviejo");
+const button181 = document.querySelector("#button-calza-bordomelange");
+const button182 = document.querySelector("#button-calza-turquesa");
+const button183 = document.querySelector("#button-calza-durazno");
+const button184 = document.querySelector("#button-calza-zanahoria");
+const button185 = document.querySelector("#button-calza-verdebenetton");
+const button186 = document.querySelector("#button-calza-verdeingles");
+const button187 = document.querySelector("#button-calza-morado");
+const button188 = document.querySelector("#button-calza-petroleomelange");
+const button189 = document.querySelector("#button-calza-fucsia");
+const button190 = document.querySelector("#button-calza-plomomelange");
+const button191 = document.querySelector("#button-calza-mostaza");
+const button192 = document.querySelector("#button-calza-argentina");
+const button193 = document.querySelector("#button-calza-verdeesmeralda");
+const button194 = document.querySelector("#button-calza-azulmarino");
+const button195 = document.querySelector("#button-calza-celestepastel");
+const button196 = document.querySelector("#button-calza-lilapastel");
+const button197 = document.querySelector("#button-calza-azulfrancia");
+const button198 = document.querySelector("#button-calza-violeta");
+const button224 = document.querySelector("#button-calza-grisplomo");
+
+const button199 = document.querySelector("#button-calza-alba");
+const button200 = document.querySelector("#button-calza-aurora");
+const button201 = document.querySelector("#button-calza-cayena");
+const button202 = document.querySelector("#button-calza-eira");
+const button203 = document.querySelector("#button-calza-euphoria");
+const button204 = document.querySelector("#button-calza-forestprint");
+const button205 = document.querySelector("#button-calza-hanna");
+const button206 = document.querySelector("#button-calza-hiedra");
+const button207 = document.querySelector("#button-calza-iceprint");
+const button208 = document.querySelector("#button-calza-indiana");
+const button209 = document.querySelector("#button-calza-jane");
+const button210 = document.querySelector("#button-calza-kahlo");
+const button211 = document.querySelector("#button-calza-kitty");
+const button212 = document.querySelector("#button-calza-limaprint");
+const button213 = document.querySelector("#button-calza-love");
+const button214 = document.querySelector("#button-calza-mei");
+const button215 = document.querySelector("#button-calza-mirage");
+const button216 = document.querySelector("#button-calza-paradise");
+const button217 = document.querySelector("#button-calza-phoenix");
+const button218 = document.querySelector("#button-calza-roseprint");
+const button219 = document.querySelector("#button-calza-snow");
+const button220 = document.querySelector("#button-calza-splash");
+const button221= document.querySelector("#button-calza-thai");
+const button222 = document.querySelector("#button-calza-tiffany");
+const button223 = document.querySelector("#button-calza-vader");
+//EN TOTAL SON 224 (ESTA EN COLORES EL ULTIMO)
+
+button170.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaNegro.webp");
+};
+button171.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaGrisMelange.webp");
+};
+button172.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaTerra.jpg");
+};
+button173.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaRojo.webp");
+};
+button174.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaMagentaMelange.webp");
+};
+button175.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaAquaMelange.webp");
+};
+button176.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaLavandaMelange.webp");
+};
+button177.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaRosaMelange.webp");
+};
+button178.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaVerdeMilitar.webp");
+};
+button179.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaPetroleo.webp");
+};
+button180.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaRosaViejo.webp");
+};
+button181.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaBordoMelange.webp");
+};
+button182.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaTurquesa.webp");
+};
+button183.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaDurazno.webp");
+};
+button184.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaZanahoria.webp");
+};
+button185.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaVerdeBenetton.webp");
+};
+button186.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaVerdeIngles.webp");
+};
+button187.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaMorado.webp");
+};
+button188.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaPetroleoMelange.webp");
+};
+button189.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaFucsia.jpg");
+};
+button190.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaPlomoMelange.webp");
+};
+button191.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaMostaza.webp");
+};
+button192.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaArgentina.webp");
+};
+button193.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaVerdeEsmeralda.webp");
+};
+button194.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaAzulMarino.webp");
+};
+button195.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaCelestePastel.webp");
+};
+button196.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaLilaPastel.webp");
+};
+button197.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaAzulFrancia.webp");
+};
+button198.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaVioleta.webp");
+}
+button224.onclick = function () {
+  changeImageCC("Lemur/Calzas/calzaGrisPlomo.webp");
+}
+
+
+button199.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaAlba.jpg");
+}
+button200.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaAurora.jpg");
+}
+button201.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaCayena.jpg");
+}
+button202.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaEira.jpg");
+}
+button203.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaEuphoria.jpg");
+}
+button204.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaForestPrint.jpg");
+}
+button205.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaHanna.jpg");
+}
+button206.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaHiedra.jpg");
+}
+button207.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaIcePrint.jpg");
+}
+button208.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaIndiana.jpg");
+}
+button209.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaJane.jpg");
+}
+button210.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaKahlo.jpg");
+}
+button211.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaKitty.jpg");
+}
+button212.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaLimaPrint.jpg");
+}
+button213.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaLove.jpg");
+}
+button214.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaMei.jpg");
+}
+button215.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaMirage.jpg");
+}
+button216.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaParadise.jpg");
+}
+button217.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaPhoenix.jpg");
+}
+button218.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaRosePrint.webp");
+}
+button219.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaSnow.jpg");
+}
+button220.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaSplash.jpg");
+}
+button221.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaThai.jpg");
+}
+button222.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaTiffany.jpg");
+}
+button223.onclick = function () {
+    changeImageCE("Lemur/Calzas/calzaVader.jpg");
+}
+
+
+
 
 
