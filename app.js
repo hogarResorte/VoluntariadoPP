@@ -1096,6 +1096,7 @@ button169.onclick = function () {
 
 const image15 = document.querySelector("#calza-color");
 const image16 = document.querySelector("#calza-estampa");
+const image17 = document.querySelector('#calza-combinada');
 
 function changeImageCC(image) {
   $(image15).attr("src", image);
@@ -1103,6 +1104,10 @@ function changeImageCC(image) {
 
 function changeImageCE(image) {
   $(image16).attr("src", image);
+}
+
+function changeImageCCom(image) {
+  $(image17).attr("src", image);
 }
 
 const button170 = document.querySelector("#button-calza-negro");
@@ -1162,6 +1167,17 @@ const button221= document.querySelector("#button-calza-thai");
 const button222 = document.querySelector("#button-calza-tiffany");
 const button223 = document.querySelector("#button-calza-vader");
 //EN TOTAL SON 224 (ESTA EN COLORES EL ULTIMO)
+
+const button225 = document.querySelector("#button-calza-combinada-aurora");
+const button226 = document.querySelector("#button-calza-combinada-durazno");
+const button227 = document.querySelector("#button-calza-combinada-golden");
+const button228 = document.querySelector("#button-calza-combinada-iceprint");
+const button229 = document.querySelector("#button-calza-combinada-leia");
+const button230 = document.querySelector("#button-calza-combinada-limaprint");
+const button231 = document.querySelector("#button-calza-combinada-mostaza");
+const button232 = document.querySelector("#button-calza-combinada-roseprint");
+const button233 = document.querySelector("#button-calza-combinada-storm");
+const button234 = document.querySelector("#button-calza-combinada-trixie");
 
 button170.onclick = function () {
   changeImageCC("Lemur/Calzas/calzaNegro.webp");
@@ -1331,6 +1347,36 @@ button223.onclick = function () {
     changeImageCE("Lemur/Calzas/calzaVader.jpg");
 }
 
+button225.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaAurora.webp");
+};
+button226.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaDurazno.webp");
+};
+button227.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaGolden.webp");
+};
+button228.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaIcePrint.jpg");
+};
+button229.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaLeia.webp");
+};
+button230.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaLimaPrint.webp");
+};
+button231.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaMostaza.webp");
+};
+button232.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaRosePrint.webp");
+};
+button233.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaStorm.webp");
+};
+button234.onclick = function () {
+  changeImageCCom("Lemur/Calzas/combinadaTrixie.webp");
+};
 
 
 
