@@ -272,29 +272,21 @@ button:hover, button a:hover {
   height: 240px;
 }
 
-.title {
+.title,
+.title-R {
   text-align: right;
   margin-top: 5%;
   margin-bottom: 3%;
 }
 
-.title p img {
+.title p img,
+.title-R p img {
   width: 70%;
 }
 
 .title-R {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  margin-top: 200px;  
-  margin-bottom: 10px;
-  color: white;
+  margin-top: 20%;
 }
-
 
 .container-detalle {
   display: flex;
