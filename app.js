@@ -1378,6 +1378,259 @@ button234.onclick = function () {
   changeImageCCom("Lemur/Calzas/combinadaTrixie.webp");
 };
 
+//CAPRIS
 
+const image18 = document.querySelector("#capri-estampa");
+const image19 = document.querySelector("#capri-color");
 
+function changeImageCapE(image) {
+  $(image18).attr("src", image);
+}
 
+function changeImageCapC(image) {
+  $(image19).attr("src", image);
+}
+
+const button235 = document.querySelector("#button-capri-alba");
+const button236 = document.querySelector("#button-capri-aurora");
+const button237 = document.querySelector("#button-capri-cayena");
+const button238 = document.querySelector("#button-capri-eira");
+const button239 = document.querySelector("#button-capri-euphoria");
+const button240 = document.querySelector("#button-capri-forestprint");
+const button241 = document.querySelector("#button-capri-golden");
+const button242 = document.querySelector("#button-capri-hanna");
+const button243 = document.querySelector("#button-capri-hiedra");
+const button244 = document.querySelector("#button-capri-iceprint");
+const button245 = document.querySelector("#button-capri-indiana");
+const button246 = document.querySelector("#button-capri-jane");
+const button247 = document.querySelector("#button-capri-kahlo");
+const button248 = document.querySelector("#button-capri-kalesi");
+const button249 = document.querySelector("#button-capri-kitty");
+const button250 = document.querySelector("#button-capri-limaprint");
+const button251 = document.querySelector("#button-capri-love");
+const button252 = document.querySelector("#button-capri-mei");
+const button253 = document.querySelector("#button-capri-mirage");
+const button254 = document.querySelector("#button-capri-paradise");
+const button255 = document.querySelector("#button-capri-phoenix");
+const button256 = document.querySelector("#button-capri-roseprint");
+const button257 = document.querySelector("#button-capri-savage");
+const button258 = document.querySelector("#button-capri-snow");
+const button259 = document.querySelector("#button-capri-soft");
+const button260 = document.querySelector("#button-capri-splash");
+const button261 = document.querySelector("#button-capri-storm");
+const button262 = document.querySelector("#button-capri-thai");
+const button263 = document.querySelector("#button-capri-tiffany");
+const button264 = document.querySelector("#button-capri-vader");
+const button265 = document.querySelector("#button-capri-wild");
+
+const button266 = document.querySelector("#button-capri-negro");
+const button267 = document.querySelector("#button-capri-grismelange");
+const button268 = document.querySelector("#button-capri-terra");
+const button269 = document.querySelector("#button-capri-rojo");
+const button270 = document.querySelector("#button-capri-magentamelange");
+const button271 = document.querySelector("#button-capri-aquamelange");
+const button272 = document.querySelector("#button-capri-lavandamelange");
+const button273 = document.querySelector("#button-capri-rosamelange");
+const button274 = document.querySelector("#button-capri-verdemilitar");
+const button275 = document.querySelector("#button-capri-petroleo");
+const button276 = document.querySelector("#button-capri-rosaviejo");
+const button277 = document.querySelector("#button-capri-bordomelange");
+const button278 = document.querySelector("#button-capri-turquesa");
+const button279 = document.querySelector("#button-capri-durazno");
+const button280 = document.querySelector("#button-capri-zanahoria");
+const button281 = document.querySelector("#button-capri-verdebenetton");
+const button282 = document.querySelector("#button-capri-verdeingles");
+const button283 = document.querySelector("#button-capri-morado");
+const button284 = document.querySelector("#button-capri-petroleomelange");
+const button285 = document.querySelector("#button-capri-fucsia");
+const button286 = document.querySelector("#button-capri-plomomelange");
+const button287 = document.querySelector("#button-capri-mostaza");
+const button288 = document.querySelector("#button-capri-verdeesmeralda");
+const button289 = document.querySelector("#button-capri-azulmarino");
+const button290 = document.querySelector("#button-capri-celestepastel");
+const button291 = document.querySelector("#button-capri-lilapastel");
+const button292 = document.querySelector("#button-capri-azulfrancia");
+const button293 = document.querySelector("#button-capri-violeta");
+const button294 = document.querySelector("#button-capri-grisplomo");
+
+button235.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriAlba.webp");
+}
+button236.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriAurora.webp");
+}
+button237.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriCayena.webp");
+}
+button238.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriEira.webp");
+}
+button239.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriEuphoria.webp");
+}
+button240.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriForestPrint.webp");
+}
+button241.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriGolden.webp");
+}
+button242.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriHanna.webp");
+}
+button243.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriHiedra.webp");
+}
+button244.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriIcePrint.webp");
+}
+button245.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriIndiana.webp");
+}
+button246.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriJane.webp");
+}
+button247.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriKahlo.webp");
+}
+button248.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriKalesi.webp");
+}
+button249.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriKitty.webp");
+}
+button250.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriLimaPrint.webp");
+}
+button251.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriLove.webp");
+}
+button252.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriMei.webp");
+}
+button253.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriMirage.webp");
+}
+button254.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriParadise.webp");
+}
+button255.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriPhoenix.jpg");
+}
+button256.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriRosePrint.jpg");
+}
+button257.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriSavage.webp");
+}
+button258.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriSnow.webp");
+}
+button259.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriSoft.webp");
+}
+button260.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriSplash.webp");
+}
+button261.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriStorm.jpg");
+}
+button262.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriThai.webp");
+}
+button263.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriTiffany.webp");
+}
+button264.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriVader.webp");
+}
+button265.onclick = function () {
+  changeImageCapE("Lemur/Capris/capriWild.jpg");
+}
+
+button266.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriNegro.webp");
+}
+button267.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriGrisMelange.webp");
+}
+button268.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriTerra.webp");
+}
+button269.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriRojo.webp");
+}
+button270.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriMagentaMelange.webp");
+}
+button271.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriAquaMelange.webp");
+}
+button272.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriLavandaMelange.webp");
+}
+button273.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriRosaMelange.webp");
+}
+button274.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriVerdeMilitar.webp");
+}
+button275.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriPetroleo.jpg");
+}
+button276.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriRosaViejo.webp");
+}
+button277.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriBordoMelange.webp");
+}
+button278.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriTurquesa.webp");
+}
+button279.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriDurazno.webp");
+}
+button280.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriZanahoria.webp");
+}
+button281.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriVerdeBenetton.webp");
+}
+button282.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriVerdeIngles.webp");
+}
+button283.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriMorado.webp");
+}
+button284.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriPetroleoMelange.webp");
+}
+button285.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriFucsia.jpg");
+}
+button286.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriPlomoMelange.webp");
+}
+button287.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriMostaza.webp");
+}
+button288.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriVerdeEsmeralda.webp");
+}
+button289.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriAzulMarino.webp");
+}
+button290.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriCelestePastel.webp");
+}
+button291.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriLilaPastel.webp");
+}
+button292.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriAzulFrancia.webp");
+}
+button293.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriVioleta.webp");
+}
+button294.onclick = function () {
+  changeImageCapC("Lemur/Capris/capriGrisPlomo.webp");
+}

@@ -12,6 +12,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -272,15 +273,13 @@ button:hover, button a:hover {
 }
 
 .title {
-  display: block;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-family: "Oswald", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  margin-top: 50px;
-  color: white;
+  text-align: right;
+  margin-top: 5%;
+  margin-bottom: 3%;
+}
+
+.title p img {
+  width: 70%;
 }
 
 .title-R {
@@ -296,11 +295,11 @@ button:hover, button a:hover {
   color: white;
 }
 
+
 .container-detalle {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 10px;
 }
 
 .detalle {
@@ -417,6 +416,7 @@ button:hover, button a:hover {
 
 .colores  {
   margin-bottom: 10px;  
+  text-align: center;
 }
 
 .tiposTop .card:hover {
@@ -541,7 +541,8 @@ button:hover, button a:hover {
 
 .separador-kids {
   height: 400px;
-  margin-top: 500px;
+  width: 100%;
+  margin-top: 5%;
   background-image: url(Lemur/Kids/kidsGrupal3.jpg);
   background-repeat: no-repeat;
   background-color: rgb(243, 133, 93);
@@ -732,6 +733,7 @@ footer .container .row .redes {
 
   main {
     margin: 0;
+    background: border-box;
   }
   .separador {
     margin-top: 0px;
@@ -795,6 +797,8 @@ footer .container .row .redes {
     font-size: 10px;
     margin-top: 60px;
     margin-bottom: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: white;
   }
 
@@ -893,7 +897,6 @@ footer .container .row .redes {
 
   .separador-kids {
     height: 200px;
-    margin-top: 270px;
     background-image: url(Lemur/Kids/kidsGrupal3.jpg);
     background-size: contain;
     background-repeat: repeat-y;
