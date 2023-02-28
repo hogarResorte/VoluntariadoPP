@@ -798,9 +798,10 @@ footer .container .row .redes {
     color: white;
   }
 
-  button .verColores{
+  button {
     font-size: 10px !important;
   }
+  
   main .detalle {
     font-size: 8.5px;
     margin: 2px;
