@@ -177,14 +177,14 @@ filter: brightness(0.75);
 button {
   font-family: "Oswald", sans-serif;
   font-weight: 100;
-  font-size: 15px;
+  font-size: 15px; 
   border-radius: 6px;
   display: inline;
   justify-content: center;
   text-align: center;
-  background-color: white;
-  color: #f72c91;
-  border-color: #f72c91;
+  background-color: black;
+  color: #f3afaf;
+  border-color: black;
 }
 
 button:hover, button a:hover {
@@ -794,7 +794,9 @@ footer .container .row .redes {
     color: white;
   }
 
-
+  button {
+    font-size: 10px !important;
+  }
   main .detalle {
     font-size: 8.5px;
     margin: 2px;
