@@ -52,16 +52,16 @@
         </div>
         <div class="col-lg-5">
           <div class="navbar">
-              <ul class="nav">
-                <li><a href="" class="nav-link">Inicio</a></li>
-                <li><a href="" class="nav-link">Catálogos</a>
-                  <ul>
-                    <li><a href="freya.html">Freya Sport</a></li>
-                    <li><a href="lemur.html">Lemur Fit</a></li>
-                  </ul>
-                </li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
-              </ul>
+            <ul class="nav">
+              <li><a href="" class="nav-link">Inicio</a></li>
+              <li><a href="" class="nav-link">Catálogos</a>
+                <ul>
+                  <li><a href="freya.html">Freya Sport</a></li>
+                  <li><a href="lemur.html">Lemur Fit</a></li>
+                </ul>
+              </li>
+              <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
 
           </div>
 
@@ -82,10 +82,14 @@
 
 
     <div id="catalogo" class="container">
-      <a href="freya.html">
-        <div class="card">
-          <img src="Freya/Musculosas/sudaderaBlesta2.jpg" alt="freya">
+      <a id="freya" html="freya.html">
+        <div class="card" class="imagen-container">
+            <img src="Freya/Musculosas/sudaderaBlesta2.jpg" alt="freya" onclick="openPopup()">
           <h2>FREYA SPORT</h2>
+        </div>
+        <div id="popup" class="popup" style="display:none">
+          <img src="mantenimiento.png">
+          <button class="closePopUp btn-xs btn-dark" type="button" onclick="closePopup()">Entendido!</button>
         </div>
       </a>
 
@@ -133,8 +137,7 @@
     </div>
   </footer>
 
+  <script src="app.js"></script>
 </body>
-
-<script src="js/carrito.js"></script>
 
 </html>

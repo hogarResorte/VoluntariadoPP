@@ -1,3 +1,19 @@
+/*var webEnMantenimiento;
+
+const freyaMantenimiento = document.querySelector("#freya");
+
+freyaMantenimiento.onclick = function () {
+  webEnMantenimiento = window.open("mantenimiento.html");
+};
+*/
+
+function openPopup() {
+  document.getElementById("popup").style.display = "block";
+}
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
 const iconoMenu = document.querySelector("#icono-menu"),
   menu = document.querySelector("#menu");
 
@@ -6,24 +22,6 @@ iconoMenu.addEventListener("click", (e) => {
   document.body.classList.toggle("opacity");
 });
 
-/*COLORES EN PRENDAS
-faltan: 
-    
-Competicion GRIS PLOMO - VIOLETA - AZUL MARINO 
-
-Greta AZUL MARINO 
-
-Marilyn AZUL FRANCIA
-
-Scarlet AZUL MARINO
-
-Cleo TODOS MENOS DURAZNO - PETROLEO - MOSTAZA
-
-Taylor TODOS MENOS NEGRO - BLANCO - ROJO - ROSA VIEJO - AZUL FRANCIA - 
-VERDE MILITAR - VERDE BENETTON - VERDE INGLES - FUCSIA - CHICLE - VIOLETA
-
-Kim muchos
-*/
 
 //COLORES TOPS
 
