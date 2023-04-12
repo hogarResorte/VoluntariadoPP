@@ -368,10 +368,10 @@ footer .container .row .redes {
   .separador {
     -webkit-transition: all 0.7s ease;
     transition: all 0.7s ease;
-    -webkit-filter: brightness(0.35);
+    filter: brightness(0.35);
   }
   .separador:hover {
-    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
   }
 
   /*CATEGORIAS*/
