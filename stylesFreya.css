@@ -17,7 +17,7 @@ body {
 
 body {
   background-color: black;
-  background-image: url(fondo4.jpg);
+  background-image: url(Freya/fondo4.jpg);
   background-position: center;
   background-size: contain;
 }
@@ -124,8 +124,8 @@ main .container-productos {
 }
 
 main .container-productos .card {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -142,8 +142,7 @@ main .container-productos .card:hover {
 }
 
 main .container-productos .card img {
-  width: 130px;
-  height: 210px;
+  width: 350px;
   padding: 0;
   margin: 0;
   justify-content: center;

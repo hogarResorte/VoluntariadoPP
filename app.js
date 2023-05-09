@@ -7,6 +7,22 @@ freyaMantenimiento.onclick = function () {
 };
 */
 
+/* FREYA SPORT */
+
+/*const mujerBtn = document.querySelector('#mujer-btn');
+mujer.addEventListener('click', () => {
+  cargarCategoria('mujer');
+});
+
+const hombreBtn = document.querySelector('hombre-btn');
+hombreBtn.addEventListener('click', () => {
+  cargarCategoria('hombre');
+});
+
+*/
+
+/* LEMUR FIT */
+
 function openPopup() {
   document.getElementById("popup").style.display = "block";
 }
