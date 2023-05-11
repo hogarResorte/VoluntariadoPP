@@ -243,7 +243,7 @@ button:hover , button a:hover  {
 }
 
 .container-productos .card {
-  width: 200px;
+  width: 180px;
   height: 280px;
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -287,10 +287,6 @@ button:hover , button a:hover  {
   color: black;
 }
 
-.container-productos .card .kidsImg {
-  width: 100%;
-  height: 240px;
-}
 
 .title,
 .title-R {
@@ -774,7 +770,7 @@ footer .container .row .redes {
 
   main .container-productos .card img {
     width: 100%;
-    height: 80%;
+    height: 85%;
   }
 
   main .container-productos h3 {
@@ -786,11 +782,6 @@ footer .container .row .redes {
   main .container-productos a {
     text-decoration: none;
     color: black;
-  }
-
-  main .container-productos .card .kidsImg {
-    width: 100%;
-    height: 90px;
   }
 
   /*PRODUCTOS*/
