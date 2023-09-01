@@ -21,7 +21,8 @@ hombreBtn.addEventListener('click', () => {
 
 */
 
-/* LEMUR FIT */
+
+// VENTANA DE MANTENIMIENTO FREYA
 
 function openPopup() {
   document.getElementById("popup").style.display = "block";
@@ -30,6 +31,7 @@ function closePopup() {
   document.getElementById("popup").style.display = "none";
 }
 
+// LEMUR FIT
 const iconoMenu = document.querySelector("#icono-menu"),
   menu = document.querySelector("#menu");
 
