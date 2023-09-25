@@ -146,7 +146,7 @@ function changeImage(color) {
       image3.src = "Lemur/Tops/gretaPetroleo.jpg";
       image4.src = "Lemur/Tops/marilynPetroleo.jpg";
       image5.src = "Lemur/Tops/scarletPetroleo.jpg";
-      image6.src = "Lemur/Tops/Tipos/cleoPetroleo.jpg";
+      image6.src = "Lemur/Tops/cleoPetroleo.jpg";
 
       break;
     case 13:
