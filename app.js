@@ -51,6 +51,7 @@ const image5 = document.querySelector("#scarlet");
 const image6 = document.querySelector("#cleo");
 const image7 = document.querySelector("#taylor");
 const image8 = document.querySelector("#kim");
+const imageBl = document.querySelector("#blake");
 
 function changeImage(color) {
   switch (color) {
@@ -62,6 +63,7 @@ function changeImage(color) {
       image5.src = "Lemur/Tops/Tipos/tipoScarlet.jpg";
       image7.src = "Lemur/Tops/Tipos/tipoTaylor.jpg";
       image8.src = "Lemur/Tops/Tipos/tipoKim.jpg";
+      imageBl.src = "Lemur/Tops/Tipos/tipoBlake.jpg";
       break;
     case 2:
       image.src = "Lemur/Tops/basicoGrisMelange.jpg";
@@ -95,6 +97,7 @@ function changeImage(color) {
       image5.src = "Lemur/Tops/scarletRojo.jpg";
       image7.src = "Lemur/Tops/taylorRojo.jpg";
       image8.src = "Lemur/Tops/kimRojo.jpg";
+      imageBl.src = "Lemur/Tops/blakeRojo.jpg";
       break;
     case 6:
       image.src = "Lemur/Tops/basicoBlueMelange.jpg";
